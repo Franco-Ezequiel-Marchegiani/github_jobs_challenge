@@ -14,11 +14,23 @@
     align-items: center;
     position: relative;
 }
+.fa-briefcase{
+    color: #B9BDCF;
+    position: relative;
+    left: 38px;
+}
 ::placeholder {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    max-width: 21ch;
+    max-width: 13ch;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 48px;
+    color: #B9BDCF;
 }
 .inputSearchHeader{
     width: 80vw;
@@ -52,4 +64,19 @@
     color: #FFFFFF;
     position: absolute;
     right: 5px;
+}
+@media only screen and (min-width: 380px){
+    ::placeholder {
+        max-width: 21ch;
+    }
+}
+@media only screen and (min-width: 468px){
+    ::placeholder {
+        max-width: 50ch;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .inputSearchHeader{
+        width: 50vw;
+    }
 }

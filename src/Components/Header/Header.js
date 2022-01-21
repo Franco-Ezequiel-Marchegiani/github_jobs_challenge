@@ -5,6 +5,7 @@ function Header() {
   return (
     <header className="headerContainer">
         <div className='searchHeaderContainer'>
+            <i className="fas fa-briefcase"></i>
             <input type="text" placeholder='Title, companies, expertise or benefits' className='inputSearchHeader'/>
             <button className='btn-searchHeader'>Search</button>
         </div>
