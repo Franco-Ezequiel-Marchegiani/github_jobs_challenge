@@ -1,0 +1,27 @@
+.searchHeaderContainer{
+    height: 138px;
+    background-image: url("../../Images/backgroundImg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.inputSearchHeader{
+    width: 315px;
+    height: 55px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.btn-searchHeader{
+    width: 104px;
+    height: 47px;
+    background: #1E86FF;
+    border-radius: 4px;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}

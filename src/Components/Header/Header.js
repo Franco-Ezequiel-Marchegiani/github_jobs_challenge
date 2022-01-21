@@ -4,8 +4,8 @@ import BackgroundImage from '../../Images/backgroundImg.png'
 function Header() {
   return (
     <header className="headerContainer">
-        <div>
-            <input type="text" className='inputSearchHeader'/>
+        <div className='searchHeaderContainer'>
+            <input type="text" placeholder='Title, companies, expertise or benefits' className='inputSearchHeader'/>
             <button className='btn-searchHeader'>Search</button>
         </div>
     </header>
