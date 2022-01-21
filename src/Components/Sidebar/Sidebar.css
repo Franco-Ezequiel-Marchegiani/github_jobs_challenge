@@ -1,0 +1,62 @@
+.checkBoxFullTimeContainer{
+    padding: 30px 0 0 14px;
+    display: flex;
+    align-items: center;
+}
+:checked{
+    width: 18px;
+    height: 18px;
+    background-color: #334680;
+    border: 1px solid #B9BDCF;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.checkBoxFullTimeContainer label{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #334680;    
+}
+.searchLocationContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.searchLocationContainer label{
+    padding: 26px 0 6px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #B9BDCF;
+}
+.fa-globe-americas{
+    color: #B9BDCF;
+    position: relative;
+    left: 20px;
+    top: 32px;
+}
+.searchLocation{
+    height: 48px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+.radioContainer{
+    margin: 6px 0;
+}
+.radioContainer label{
+    padding-left: 8px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #334680;    
+}
