@@ -1,0 +1,9 @@
+
+
+
+@media only screen and (min-width: 1200px){
+    .homeContainreAll{
+        max-width: 80%;
+        margin: auto;
+    }
+}
