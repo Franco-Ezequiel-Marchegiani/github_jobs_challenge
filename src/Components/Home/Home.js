@@ -7,7 +7,7 @@ import './Home.css';
 function Home() {
   return (
     <main className="homeContainreAll">
-      <h1>Github <span>Jobs</span></h1>
+      <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
       <Header/>
       <section>
           <Sidebar/>
