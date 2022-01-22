@@ -1,5 +1,28 @@
-
-
+.jobBarContainer{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    display: flex;
+}
+.workMainInfoImgContainer{
+    display: flex;
+    flex-direction: column;
+}
+.workBarDataJobContainer{
+    display: flex;
+    flex-direction: row;
+}
+.workBarCityContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.workBarDaysContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 @media only screen and (min-width: 1000px){
     .workListContainer{
         max-width: 100%;
