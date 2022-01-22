@@ -13,10 +13,8 @@ function WorkList() {
               <Pagination className='paginationContainer'>
                 <Pagination.Prev />
                 <Pagination.Item>{1}</Pagination.Item>
-
                 <Pagination.Item active>{2}</Pagination.Item>
                 <Pagination.Item>{3}</Pagination.Item>
-
                 <Pagination.Ellipsis />
                 <Pagination.Item>{10}</Pagination.Item>
                 <Pagination.Next />
