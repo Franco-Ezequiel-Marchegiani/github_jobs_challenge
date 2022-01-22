@@ -10,8 +10,6 @@
     height: 90px;
 }
 .workMainInfoImgContainer{
-    display: flex;
-    flex-direction: column;
 }
 .workMainInfoImgContainer button{
     width: 63px;
