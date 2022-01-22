@@ -5,6 +5,10 @@ function WorkList() {
   return (
     <section className="workListContainer">
       <WorkBar/>
+      <WorkBar/>
+      <WorkBar/>
+      <WorkBar/>
+      <WorkBar/>
     </section>
   );
 }
