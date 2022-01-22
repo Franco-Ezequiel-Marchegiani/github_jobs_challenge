@@ -9,7 +9,15 @@
     width: 90px;
     height: 90px;
 }
-.workMainInfoImgContainer{
+.titleEmpresa{
+    margin: 0;
+    margin: 12px 0 8px;
+}
+.titlePuesto{
+    margin: 0;
+    margin-bottom: 14px;
+    position: relative;
+    bottom: 4px;
 }
 .workMainInfoImgContainer button{
     width: 63px;
