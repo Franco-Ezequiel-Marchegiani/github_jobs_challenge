@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
-import WorkBar from '../WorkBar/WorkBar';
+import WorkList from '../WorkBar/WorkList';
 import './Home.css';
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
       <Header/>
       <section className='containetMainHome'>
           <Sidebar/>
-          <WorkBar/>
+          <WorkList/>
       </section>
     </main>
   );
