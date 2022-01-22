@@ -39,7 +39,7 @@
 .workBarDataJobContainer{
     display: flex;
     flex-direction: row;
-    padding: 16px 0 4px;
+    padding: 16px 0 14px;
 }
 .workBarCityContainer{
     display: flex;
@@ -63,6 +63,7 @@
     line-height: 14px;
     color: #B9BDCF;
     padding-right: 28px;
+    margin: 0;
 }
 .fa-clock{
     color: #B9BDCF;  
@@ -75,6 +76,7 @@
     font-size: 12px;
     line-height: 14px;
     color: #B9BDCF;
+    margin: 0;
 }
 @media only screen and (min-width: 1000px){
     .jobBarContainer{
