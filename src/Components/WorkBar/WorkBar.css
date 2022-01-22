@@ -16,6 +16,7 @@
 .workBarDataJobContainer{
     display: flex;
     flex-direction: row;
+    padding: 16px 0 4px;
 }
 .workBarCityContainer{
     display: flex;
@@ -27,7 +28,10 @@
     flex-direction: row;
     align-items: center;
 }
-
+.fa-globe-europe{
+    color: #B9BDCF;
+    padding-right: 8px;
+}
 .workBarCityContainer p{
     font-family: Roboto;
     font-style: normal;
@@ -35,8 +39,12 @@
     font-size: 12px;
     line-height: 14px;
     color: #B9BDCF;
+    padding-right: 28px;
 }
-
+.fa-clock{
+    color: #B9BDCF;  
+    padding-right: 8px;  
+}
 .workBarDaysContainer p{
     font-family: Roboto;
     font-style: normal;
