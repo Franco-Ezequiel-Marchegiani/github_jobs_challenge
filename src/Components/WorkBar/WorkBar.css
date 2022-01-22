@@ -5,6 +5,10 @@
     border-radius: 4px;
     display: flex;
 }
+.workBarImgContainer img{
+    width: 90px;
+    height: 90px;
+}
 .workMainInfoImgContainer{
     display: flex;
     flex-direction: column;
@@ -27,6 +31,12 @@
     .jobBarContainer{
         width: 52vw;
         height: 114px;
+        position: relative;
+    }
+    .workBarDataJobContainer{
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
     .workListContainer{
         max-width: 100%;

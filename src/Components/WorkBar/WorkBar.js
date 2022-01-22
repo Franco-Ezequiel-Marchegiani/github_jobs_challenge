@@ -10,8 +10,8 @@ function WorkBar() {
               <img src={LogoEj} alt="Logo Empresa" />
             </div>
             <div className='workMainInfoImgContainer'>
-                <p>Kasisto</p>
-                <p>Front-End Software Engineer</p>
+                <p className='titleEmpresa'>Kasisto</p>
+                <p className='titlePuesto'>Front-End Software Engineer</p>
                 <button>Full time</button>
                   <div className='workBarDataJobContainer'>
                     <div className='workBarCityContainer'>
