@@ -10,8 +10,7 @@ function WorkList() {
         <WorkBar/>
         <WorkBar/>
         <WorkBar/>
-        <div className='paginationContainer'>
-              <Pagination>
+              <Pagination className='paginationContainer'>
                 <Pagination.First />
                 <Pagination.Prev />
                 <Pagination.Item>{1}</Pagination.Item>
@@ -28,7 +27,6 @@ function WorkList() {
                 <Pagination.Next />
                 <Pagination.Last />
               </Pagination>
-        </div>
     </section>
   );
 }

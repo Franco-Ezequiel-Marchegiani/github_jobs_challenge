@@ -78,6 +78,13 @@
     color: #B9BDCF;
     margin: 0;
 }
+.paginationContainer{
+    margin: 30px 0;
+    width: 100%;
+    background-color: rgb(255, 105, 105);
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (min-width: 1000px){
     .jobBarContainer{
         width: 52vw;
