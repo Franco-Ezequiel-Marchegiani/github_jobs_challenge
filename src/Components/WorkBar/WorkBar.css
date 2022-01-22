@@ -27,6 +27,24 @@
     flex-direction: row;
     align-items: center;
 }
+
+.workBarCityContainer p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B9BDCF;
+}
+
+.workBarDaysContainer p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B9BDCF;
+}
 @media only screen and (min-width: 1000px){
     .jobBarContainer{
         width: 52vw;
