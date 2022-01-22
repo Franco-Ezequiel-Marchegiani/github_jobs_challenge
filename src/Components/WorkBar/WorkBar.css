@@ -1,0 +1,10 @@
+
+
+@media only screen and (min-width: 1000px){
+    .workBarContainer{
+        background-color: rgb(255, 154, 154);
+        max-width: 100%;
+        margin: auto;
+        margin-left: 32px;
+    }
+}

@@ -1,3 +1,7 @@
+.homeContainreAll{
+    max-width: 95%;
+    margin: auto;
+}
 .gitHubTitle{
     padding-top: 32;
     font-family: Poppins;
@@ -10,9 +14,17 @@
 .gitHubTitle span{
     font-weight: normal;
 }
+.containetMainHome{
+    display: flex;
+    flex-direction: column;
+}
 @media only screen and (min-width: 1000px){
     .homeContainreAll{
         max-width: 80%;
         margin: auto;
+    }
+    .containetMainHome{
+        display: flex;
+        flex-direction: row;
     }
 }

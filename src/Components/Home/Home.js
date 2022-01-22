@@ -9,7 +9,7 @@ function Home() {
     <main className="homeContainreAll">
       <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
       <Header/>
-      <section>
+      <section className='containetMainHome'>
           <Sidebar/>
           <WorkBar/>
       </section>
