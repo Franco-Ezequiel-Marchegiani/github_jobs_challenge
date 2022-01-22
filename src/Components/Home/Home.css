@@ -1,9 +1,9 @@
 .homeContainreAll{
     max-width: 95%;
     margin: auto;
+    padding-top: 32px;
 }
 .gitHubTitle{
-    padding-top: 32;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;

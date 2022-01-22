@@ -22,5 +22,4 @@ function WorkList() {
     </section>
   );
 }
-
 export default WorkList;
