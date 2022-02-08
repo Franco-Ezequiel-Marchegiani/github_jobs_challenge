@@ -23,7 +23,7 @@ function WorkDetailContent() {
                     </div>
                     <div className='infoPosition'>
                         <p>This position</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                        <p>We are looking for a Full-Stack, client side software engineer to help build and integrate responsive chat interfaces, analytics dashboards and reporting tools.</p>
                     </div>
                     <div className='infoWhatWillBeDoing'>
                         <p>What you'll be doing</p>
