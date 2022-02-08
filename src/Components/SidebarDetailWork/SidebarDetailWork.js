@@ -7,7 +7,7 @@ function SidebarDetailWork() {
         <Link className='goBackSidebarLink' to="/"><i className="fas fa-long-arrow-alt-left"></i>Back to search</Link>
         <div className='howToApplyTitleContainer'>
             <h3 className='howToApplyTitle'>How to Apply</h3>
-            <p className='howToApplyParagraph'>Please email a copy of your resume and online portfolio to <Link to="#">wes@kasisto.com</Link> & CC <Link to="#">eric@kasisto.com</Link> </p>
+            <p className='howToApplyParagraph'>Please email a copy of your resume and online portfolio to <Link className='linkTextSidebarWorkDetail' to="#">wes@kasisto.com</Link> & CC <Link className='linkTextSidebarWorkDetail' to="#">eric@kasisto.com</Link> </p>
         </div>
     </aside>
   );

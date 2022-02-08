@@ -3,8 +3,35 @@
     color: #1E86FF;
     position: relative;
     left: 8px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
 }
 .goBackSidebarLink .fa-long-arrow-alt-left{
     position: relative;
     right: 8px;
+}
+.howToApplyTitle{
+    padding: 32px 0 8px;
+    color: #B9BDCF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+.howToApplyParagraph{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #334680;
+
+}
+.howToApplyParagraph .linkTextSidebarWorkDetail{
+    text-decoration: none;
+    color: #1E86FF;
 }
