@@ -1,3 +1,7 @@
+.infoHeader{
+    display: flex;
+    flex-direction: column;
+}
 .infoHeader h1{
     font-family: Roboto;
     font-style: normal;
@@ -5,7 +9,6 @@
     font-size: 24px;
     line-height: 28px;
     color: #334680;
-    
 }
 .infoHeader button{
     width: 63px;
@@ -20,11 +23,29 @@
     line-height: 14px;
     color: #334680;
     cursor: pointer;
+    background-color: transparent;
 }
-
 .infoHeader span{
-
+    padding: 8px 0 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B7BCCE;
 }
 @media only screen and (min-width: 1000px){
-    
+    .infoHeader{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding-bottom: 32px;
+    }
+    .infoHeader button{
+        margin-left: 16px;
+    }
+    .infoHeader span{
+        position: absolute;
+        bottom: 0px;
+    }
 }
