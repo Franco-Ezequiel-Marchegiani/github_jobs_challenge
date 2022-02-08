@@ -1,6 +1,10 @@
 .workBarContainer{
     margin-top: 32px;
 }
+.test{
+    width: 100%;
+    background: #FFFFFF;
+}
 .jobBarContainer{
     width: 100%;
     background: #FFFFFF;
