@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './WorkBar.css';
 import LogoEj from '../../Images/imglogoej.jpg'
 import { Link } from 'react-router-dom';
 
 function WorkBar() {
+
+  let url = "https://data.usajobs.gov/api/search?JobCategoryCode=2210"
+  let userAgent = process.env.REACT_APP_API_USERAGENT;  
+  let authKey = process.env.REACT_APP_AUTHKEY;
+  let header = {
+    method: 'GET',      
+    headers: {          
+        "Host": "localhost:3000",          
+        "User-Agent": userAgent,          
+        "Authorization-Key": authKey      
+    }  
+  }
+   useEffect(()=>{
+    fetch(url,header)
+    .then(response => response.json())
+    .then(data => console.log(data));
+  },[]) 
   return (
     <section className="workBarContainer">
         <Link className='test' to="/workDetail">
