@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function WorkBar() {
 
-  let url = "https://data.usajobs.gov/api/search?JobCategoryCode=2210"
+  let url = process.env.REACT_APP_API;
   let userAgent = process.env.REACT_APP_API_USERAGENT;  
   let authKey = process.env.REACT_APP_AUTHKEY;
   let header = {
@@ -19,7 +19,7 @@ function WorkBar() {
    useEffect(()=>{
     fetch(url,header)
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => console.log(data.SearchResult.SearchResultItems[3]));
   },[]) 
   return (
     <section className="workBarContainer">
