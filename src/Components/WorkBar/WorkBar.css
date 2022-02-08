@@ -35,9 +35,16 @@
 }
 .titlePuesto{
     margin: 0;
-    margin-bottom: 14px;
+    margin-top: 12px;
+    margin-bottom: 4px;
     position: relative;
     bottom: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #334680;
 }
 .workMainInfoImgContainer button{
     width: 63px;
