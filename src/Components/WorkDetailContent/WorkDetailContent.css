@@ -71,6 +71,17 @@
     top: 1px;
     left: -16px;
 }
+.textContainerWorkDetail div p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #334680;
+}
+.infoLocation{
+    padding-bottom: 40px;
+}
 @media only screen and (min-width: 1000px){
     .infoHeader{
         display: flex;
