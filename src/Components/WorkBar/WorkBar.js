@@ -4,7 +4,15 @@ import LogoEj from '../../Images/imglogoej.jpg'
 import { Link } from 'react-router-dom';
 
 function WorkBar(props) {
-  console.log(props.items.MatchedObjectDescriptor.OrganizationName);
+  console.log(props.nombreOrganizacion);
+  /* 
+  ApplicationCloseDate      --- finalizacionBusqueda
+  OrganizationName          --- nombreOrganizacion
+  PositionLocationDisplay   --- ubicacionPuesto
+  PositionTitle             --- tituloPuesto
+  PublicationStartDate      --- inicioFechaPublicacion
+   */
+  
   return (
     <section className="workBarContainer">
         <Link className='test' to="/workDetail">

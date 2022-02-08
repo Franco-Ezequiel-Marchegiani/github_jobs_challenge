@@ -30,7 +30,7 @@ function WorkList() {
         :
         <div>
           {work.map((individualWork, key)=>{
-          return <WorkBar key={individualWork + key} items={individualWork}/>  
+          return <WorkBar key={individualWork + key} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate}/>  
           })}
         </div>
         }
