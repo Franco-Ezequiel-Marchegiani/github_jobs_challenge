@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './SidebarDetailWork.css';
 function SidebarDetailWork() {
   return (
-    <aside>
+    <aside className='sidebarWorkDetailContainer'>
         <Link className='goBackSidebarLink' to="/"><i className="fas fa-long-arrow-alt-left"></i>Back to search</Link>
         <div className='howToApplyTitleContainer'>
             <h3 className='howToApplyTitle'>How to Apply</h3>
