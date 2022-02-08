@@ -1,0 +1,16 @@
+footer p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #B9BDCF;
+}
+.linkFooter{
+    text-decoration: none;
+    color: #B9BDCF;
+}
+.linkFooter:hover{
+    color: #a1a4b3;
+}
