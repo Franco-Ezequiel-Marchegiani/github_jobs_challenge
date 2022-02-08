@@ -8,7 +8,7 @@ function WorkDetailContent() {
                 <div className='infoHeader'>
                     <h1>Front-End Software Engineer</h1>
                     <button>Full time</button>
-                    <span>5 days ago</span>
+                    <span><i className="far fa-clock"></i>5 days ago</span>
                 </div>
                 <div>
                     <img src={LogoEj} alt="" />
