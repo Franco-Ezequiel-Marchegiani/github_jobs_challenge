@@ -1,0 +1,29 @@
+.infoHeader h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #334680;
+    
+}
+.infoHeader button{
+    width: 63px;
+    height: 27.86px;
+    border: 1px solid #334680;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #334680;
+    cursor: pointer;
+}
+.infoHeader span{
+
+}
+@media only screen and (min-width: 1000px){
+    
+}
