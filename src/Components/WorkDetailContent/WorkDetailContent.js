@@ -15,16 +15,25 @@ function WorkDetailContent() {
                     <p>Kasisto</p>
                     <span>New York</span>
                 </div>
-                <div className='infoDigitalExperiences'>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
-                </div>
-                <div className='infoPosition'>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
-                </div>
+                <section className='textContainerWorkDetail'>
+                    <div className='infoDigitalExperiences'>
+                        <p>Humanizing Digital Experiences</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    </div>
+                    <div className='infoPosition'>
+                        <p>This position</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    </div>
+                    <div className='infoWhatWillBeDoing'>
+                        <p>This position</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    </div>
+                    <div className='infoWhatWeOffer'>
+                        <p>This position</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    </div>
+                </section>
         </section>
   );
 }
