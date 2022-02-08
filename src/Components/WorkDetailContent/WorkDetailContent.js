@@ -32,7 +32,7 @@ function WorkDetailContent() {
                     </div>
                     <div className='infoWhatWeOffer'>
                         <p>What we offer:</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                        <p>Competitive compensation package Ground floor opportunity within rapidly growing tech startup Great collaborative team environment Full Benefits Fun perks</p>
                     </div>
                     <div className='infoLocation'>
                         <p>Location - NYC, Flatiron District</p>
@@ -40,12 +40,7 @@ function WorkDetailContent() {
                     </div>
                 </section>
         {/* 
-        What you’ll be doing
-        
-        Working closely with clients and internal engineering, product and design teams to gather requirements Building and integrating front-end applications with CSS, HTML, Javascript, jQuery, Vue.js, Webpack, Handlebars.js, LESS, Backbone, Python, Django and Java Working to improve user experience and functionality for tools Writing testable code utilizing common front-end unit and BDD testing frameworks What you need for this position
-        
-        3+ years in client-side web development with CSS, HTML, Javascript and jQuery Proven, full-stack front-end experience using Python and Django Other Modern Web Framework(s) experience is a plus (React, Vue, Angular, Ember) Experience working collaboratively to build scalable, modular, production software in an Agile environment Experience using RESTful json services Node.js and API development familiarity is plus D3.js is a plus
-        
+
         What we offer:
         
         Competitive compensation package Ground floor opportunity within rapidly growing tech startup Great collaborative team environment Full Benefits Fun perks
