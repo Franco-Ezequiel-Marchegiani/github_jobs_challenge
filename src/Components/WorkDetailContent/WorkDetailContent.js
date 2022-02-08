@@ -13,7 +13,7 @@ function WorkDetailContent() {
                 <div>
                     <img src={LogoEj} alt="" />
                     <p>Kasisto</p>
-                    <span>New York</span>
+                    <span><i className="fas fa-globe-americas"></i>New York</span>
                 </div>
                 <section className='textContainerWorkDetail'>
                         <div className='infoDigitalExperiences'>
