@@ -15,6 +15,12 @@ function WorkDetailContent() {
                     <p>Kasisto</p>
                     <span>New York</span>
                 </div>
+                <div className='infoDigitalExperiences'>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                </div>
+                
         </section>
   );
 }
