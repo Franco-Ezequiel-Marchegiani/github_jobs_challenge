@@ -9,9 +9,9 @@ function WorkDetailContent() {
                     <button>Full time</button>
                     <span><i className="far fa-clock"></i>5 days ago</span>
                 </div>
-                <div>
+                <div className='infoEmpresaWorkDetail'>
                     <img src={LogoEj} alt="" />
-                    <p>Kasisto</p>
+                    <h2>Kasisto</h2>
                     <span><i className="fas fa-globe-americas"></i>New York</span>
                 </div>
                 <section className='textContainerWorkDetail'>
