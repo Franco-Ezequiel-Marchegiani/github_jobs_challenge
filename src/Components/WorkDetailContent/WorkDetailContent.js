@@ -20,7 +20,11 @@ function WorkDetailContent() {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
                 </div>
-                
+                <div className='infoPosition'>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                </div>
         </section>
   );
 }
