@@ -49,6 +49,12 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    padding-left: 48px;
+}
+.inputSearchHeader::placeholder{
+    position: relative;
+    top: 2px;
+    right: 40px;
 }
 .btn-searchHeader{
     width: 104px;
