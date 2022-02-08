@@ -47,7 +47,7 @@
     color: #334680;
 }
 .workMainInfoImgContainer button{
-    width: 63px;
+    width: 130px;
     height: 26px;
     background-color: #fff;
     font-family: Roboto;
@@ -59,6 +59,10 @@
     border: 1px solid #334680;
     box-sizing: border-box;
     border-radius: 4px;
+    overflow: hidden;
+    max-width: 25ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .workBarDataJobContainer{
     display: flex;
@@ -83,7 +87,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10.5px;
     line-height: 14px;
     color: #B9BDCF;
     padding-right: 28px;
@@ -139,5 +143,62 @@
     }
     .hiddenPagination{
         visibility: hidden;
+    }
+    .titlePuesto{
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: 4px;
+        position: relative;
+        bottom: 4px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #334680;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 40ch;
+    }
+    .workBarCityContainer p{
+        overflow: hidden;
+        max-width: 25ch;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .workBarCityContainer p{
+        max-width: 30ch;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .titlePuesto{
+        max-width: 50ch;
+    }
+    .workBarCityContainer p{
+        max-width: 40ch;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .titlePuesto{
+        max-width: 55ch;
+    }
+    .workBarCityContainer p{
+        max-width: 50ch;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .titlePuesto{
+        max-width: 60ch;
+    }
+    .workBarCityContainer p{
+        max-width: 60ch;
+    }
+}
+@media only screen and (min-width: 1500px){
+    .titlePuesto{
+        max-width: 65ch;
     }
 }

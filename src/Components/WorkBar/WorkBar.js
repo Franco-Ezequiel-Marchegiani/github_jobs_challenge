@@ -21,9 +21,8 @@ function WorkBar(props) {
   let miliSegundosTranscurridos = Math.abs(fechaPublicacion.getTime() - fechaActual.getTime());
 
   let diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
-  console.log(fechaPublicacion);
-  console.log(fechaActual);
-  console.log(diasTranscurridos);
+
+  console.log(props.duracionJornada);
   return (
     <section className="workBarContainer">
         <Link className='test' to="/workDetail">
@@ -34,11 +33,11 @@ function WorkBar(props) {
                 <div className='workMainInfoImgContainer'>
                     <p className='titleEmpresa'>{props.nombreOrganizacion}</p>
                     <p className='titlePuesto'>{props.tituloPuesto}</p>
-                    <button>Full time</button>
+                    <button>{props.duracionJornada}</button>
                       <div className='workBarDataJobContainer'>
                         <div className='workBarCityContainer'>
                             <i className="fas fa-globe-europe"></i>
-                            <p>New York</p>
+                            <p>{props.ubicacionPuesto}</p>
                         </div>
                         <div className='workBarDaysContainer'>
                             <i className="far fa-clock"></i>
