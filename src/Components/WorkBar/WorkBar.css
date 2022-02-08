@@ -7,6 +7,9 @@
     text-decoration: none;
     color: #334680;
 }
+.test:hover{
+    color: #334680;
+}
 .jobBarContainer{
     width: 100%;
     background: #FFFFFF;
@@ -15,8 +18,11 @@
     display: flex;
 }
 .workBarImgContainer img{
-    width: 90px;
-    height: 90px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 4px;
 }
 .titleEmpresa{
     margin: 0;
