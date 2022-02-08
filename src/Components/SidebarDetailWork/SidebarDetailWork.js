@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SidebarDetailWork.css';
 function SidebarDetailWork() {
   return (
     <aside>
-        SidebarDetailWork
+        <Link to="/">Back to search</Link>
     </aside>
   );
 }
