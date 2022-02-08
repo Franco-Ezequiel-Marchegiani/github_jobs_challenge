@@ -3,7 +3,8 @@ import './WorkBar.css';
 import LogoEj from '../../Images/imglogoej.jpg'
 import { Link } from 'react-router-dom';
 
-function WorkBar() {
+function WorkBar(props) {
+  console.log(props.items.MatchedObjectDescriptor.OrganizationName);
   return (
     <section className="workBarContainer">
         <Link className='test' to="/workDetail">

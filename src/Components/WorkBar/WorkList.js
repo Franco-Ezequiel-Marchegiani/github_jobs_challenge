@@ -29,11 +29,9 @@ function WorkList() {
         </Spinner> 
         :
         <div>
-          <WorkBar/>
-          <WorkBar/>
-          <WorkBar/>
-          <WorkBar/>
-          <WorkBar/>
+          {work.map((individualWork, key)=>{
+          return <WorkBar key={individualWork + key} items={individualWork}/>  
+          })}
         </div>
         }
               <Pagination className={work === undefined ? "paginationContainer hiddenPagination" : "paginationContainer"}>
