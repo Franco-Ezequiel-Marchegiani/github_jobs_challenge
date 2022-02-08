@@ -26,7 +26,7 @@ function Sidebar() {
             </div>
             <div className='radioContainer'>
                <input type="radio" id="berlin" value="berlin" name="city"/>
-               <label for="berlin" htmlFor="">Berlin</label>
+               <label htmlFor="berlin">Berlin</label>
             </div>
         </div>
     </section>
