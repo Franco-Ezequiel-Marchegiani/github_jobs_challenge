@@ -108,6 +108,11 @@
     display: flex;
     justify-content: center;
 }
+.spinnerLoading{
+    position: relative;
+    top: 50%;
+    right: 50%;
+}
 @media only screen and (min-width: 1000px){
     .jobBarContainer{
         width: 52vw;
@@ -131,5 +136,8 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
+    }
+    .hiddenPagination{
+        visibility: hidden;
     }
 }
