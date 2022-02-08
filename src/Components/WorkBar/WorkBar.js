@@ -4,7 +4,6 @@ import LogoEj from '../../Images/imglogoej.jpg'
 import { Link } from 'react-router-dom';
 
 function WorkBar(props) {
-  console.log(props.a);
   /* 
   ApplicationCloseDate      --- finalizacionBusqueda
   OrganizationName          --- nombreOrganizacion
@@ -12,9 +11,19 @@ function WorkBar(props) {
   PositionTitle             --- tituloPuesto
   PublicationStartDate      --- inicioFechaPublicacion
   PositionSchedule          --- duracionJornada
-  PositionRemuneration      --- remuneracionMax&min
+  PositionRemuneration      --- remuneracionMax-min
    */
+  let fechaPublicacion = new Date(props.inicioFechaPublicacion);
+  let fechaActual = new Date();
 
+  let miliSegundosDia = 24 * 60 * 60 * 1000;
+
+  let miliSegundosTranscurridos = Math.abs(fechaPublicacion.getTime() - fechaActual.getTime());
+
+  let diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
+  console.log(fechaPublicacion);
+  console.log(fechaActual);
+  console.log(diasTranscurridos);
   return (
     <section className="workBarContainer">
         <Link className='test' to="/workDetail">
@@ -33,7 +42,7 @@ function WorkBar(props) {
                         </div>
                         <div className='workBarDaysContainer'>
                             <i className="far fa-clock"></i>
-                            <p>5 days ago</p>
+                            <p>{diasTranscurridos} days ago</p>
                         </div>
                       </div>
                 </div>
