@@ -1,16 +1,11 @@
 import React from 'react';
-import './Header.css';
-import BackgroundImage from '../../Images/backgroundImg.png'
-function Header() {
+import './SidebarDetailWork.css';
+function SidebarDetailWork() {
   return (
-    <header className="headerContainer">
-        <div className='searchHeaderContainer'>
-            <i className="fas fa-briefcase"></i>
-            <input type="text" placeholder='Title, companies, expertise or benefits' className='inputSearchHeader'/>
-            <button className='btn-searchHeader'>Search</button>
-        </div>
-    </header>
+    <aside>
+        SidebarDetailWork
+    </aside>
   );
 }
 
-export default Header;
+export default SidebarDetailWork;
