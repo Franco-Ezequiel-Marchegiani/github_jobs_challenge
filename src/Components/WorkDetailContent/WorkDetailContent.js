@@ -26,11 +26,15 @@ function WorkDetailContent() {
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
                     </div>
                     <div className='infoWhatWillBeDoing'>
-                        <p>This position</p>
+                        <p>What you'll be doing</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
                     </div>
                     <div className='infoWhatWeOffer'>
-                        <p>This position</p>
+                        <p>What we offer:</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
+                    </div>
+                    <div className='infoLocation'>
+                        <p>Location - NYC, Flatiron District</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit?</p>
                     </div>
                 </section>
