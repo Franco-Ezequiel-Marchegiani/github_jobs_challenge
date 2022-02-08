@@ -14,7 +14,7 @@ function Sidebar() {
             <input placeholder='City, state, zip code or country' className='searchLocation' type="text"/>
             <div className='radioContainer'>
                <input type="radio" id="london" value="london" name="city"/>
-               <label for="london" htmlFor="">London</label>
+               <label htmlFor="london">London</label>
             </div>
             <div className='radioContainer'>
                <input type="radio" id="amsterdam" value="amsterdam" name="city"/>
