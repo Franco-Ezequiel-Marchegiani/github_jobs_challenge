@@ -4,7 +4,7 @@ import './SidebarDetailWork.css';
 function SidebarDetailWork() {
   return (
     <aside>
-        <Link className='goBackSidebarLink' to="/">Back to search</Link>
+        <Link className='goBackSidebarLink' to="/"><i className="fas fa-long-arrow-alt-left"></i>Back to search</Link>
         <div className='howToApplyTitleContainer'>
             <h3 className='howToApplyTitle'>How to Apply</h3>
             <p className='howToApplyParagraph'>Please email a copy of your resume and online portfolio to <Link to="#">wes@kasisto.com</Link> & CC <Link to="#">eric@kasisto.com</Link> </p>
