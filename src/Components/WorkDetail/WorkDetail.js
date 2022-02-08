@@ -5,7 +5,7 @@ import './WorkDetail.css';
 
 function WorkDetail() {
   return (
-    <section className="workDetailContainer">
+    <section className="containreAll">
       <SidebarDetailWork/>
       <WorkDetailContent/>
     </section>
