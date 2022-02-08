@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 import WorkList from '../WorkBar/WorkList';
@@ -13,6 +14,7 @@ function Home() {
           <Sidebar/>
           <WorkList/>
       </section>
+      <Footer/>
     </main>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import SidebarDetailWork from '../SidebarDetailWork/SidebarDetailWork';
 import WorkDetailContent from '../WorkDetailContent/WorkDetailContent';
 import './WorkDetail.css';
@@ -11,6 +12,7 @@ function WorkDetail() {
           <SidebarDetailWork/>
           <WorkDetailContent/>
         </main>
+        <Footer/>
     </section>
   );
 }
