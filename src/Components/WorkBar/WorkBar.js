@@ -4,15 +4,17 @@ import LogoEj from '../../Images/imglogoej.jpg'
 import { Link } from 'react-router-dom';
 
 function WorkBar(props) {
-  console.log(props.nombreOrganizacion);
+  console.log(props.a);
   /* 
   ApplicationCloseDate      --- finalizacionBusqueda
   OrganizationName          --- nombreOrganizacion
   PositionLocationDisplay   --- ubicacionPuesto
   PositionTitle             --- tituloPuesto
   PublicationStartDate      --- inicioFechaPublicacion
+  PositionSchedule          --- duracionJornada
+  PositionRemuneration      --- remuneracionMax&min
    */
-  
+
   return (
     <section className="workBarContainer">
         <Link className='test' to="/workDetail">
@@ -21,8 +23,8 @@ function WorkBar(props) {
                   <img src={LogoEj} alt="Logo Empresa" />
                 </div>
                 <div className='workMainInfoImgContainer'>
-                    <p className='titleEmpresa'>Kasisto</p>
-                    <p className='titlePuesto'>Front-End Software Engineer</p>
+                    <p className='titleEmpresa'>{props.nombreOrganizacion}</p>
+                    <p className='titlePuesto'>{props.tituloPuesto}</p>
                     <button>Full time</button>
                       <div className='workBarDataJobContainer'>
                         <div className='workBarCityContainer'>
