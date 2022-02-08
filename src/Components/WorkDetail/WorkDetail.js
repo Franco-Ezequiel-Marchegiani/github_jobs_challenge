@@ -6,9 +6,11 @@ import './WorkDetail.css';
 function WorkDetail() {
   return (
     <section className="containreAll">
-      <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
-      <SidebarDetailWork/>
-      <WorkDetailContent/>
+        <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
+        <main className='containetMain'>
+          <SidebarDetailWork/>
+          <WorkDetailContent/>
+        </main>
     </section>
   );
 }

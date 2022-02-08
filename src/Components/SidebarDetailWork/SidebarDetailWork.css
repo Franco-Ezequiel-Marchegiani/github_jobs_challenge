@@ -1,0 +1,10 @@
+.goBackSidebarLink{
+    text-decoration: none;
+    color: #1E86FF;
+    position: relative;
+    left: 8px;
+}
+.goBackSidebarLink .fa-long-arrow-alt-left{
+    position: relative;
+    right: 8px;
+}

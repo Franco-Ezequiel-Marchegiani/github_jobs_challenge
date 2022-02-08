@@ -1,5 +1,4 @@
 import React from 'react';
-import SidebarDetailWork from '../SidebarDetailWork/SidebarDetailWork';
 import './WorkDetailContent.css';
 import LogoEj from '../../Images/imglogoej.jpg'
 function WorkDetailContent() {

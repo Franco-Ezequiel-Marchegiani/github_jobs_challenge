@@ -14,7 +14,7 @@
 .gitHubTitle span{
     font-weight: normal;
 }
-.containetMainHome{
+.containetMain{
     display: flex;
     flex-direction: column;
 }
@@ -23,7 +23,7 @@
         max-width: 80%;
         margin: auto;
     }
-    .containetMainHome{
+    .containetMain{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
