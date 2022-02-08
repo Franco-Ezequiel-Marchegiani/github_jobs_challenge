@@ -22,7 +22,7 @@ function Sidebar() {
             </div>
             <div className='radioContainer'>
                <input type="radio" id="newYork" value="newYork" name="city"/>
-               <label for="newYork" htmlFor="">New York</label>
+               <label htmlFor="newYork">New York</label>
             </div>
             <div className='radioContainer'>
                <input type="radio" id="berlin" value="berlin" name="city"/>
