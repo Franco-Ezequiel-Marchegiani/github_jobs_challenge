@@ -26,6 +26,7 @@ function WorkList() {
 
   //Get Publicaciones Actuales
   const indexUltimoPost
+  const indexPrimerPost
 
   return (
     <section className="workListContainer">
