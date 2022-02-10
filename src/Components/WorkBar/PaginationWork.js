@@ -1,10 +1,10 @@
 import React from 'react';
 import './WorkBar.css';
 import { Pagination } from 'react-bootstrap';
-function PaginationWork({postTotales, publicacionesPorPagina}) {
-    let active = 2;
+function PaginationWork({ postTotales, publicacionesPorPagina}) {
+    let active = 2
     let pageNumbers = [];
-    
+
     if(postTotales !== undefined){
         console.log(postTotales.length);
         
