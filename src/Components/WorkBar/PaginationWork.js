@@ -30,7 +30,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
                                     {numero}
                                 </Pagination.Item>
                     })}
-                <Pagination.Next />
+                {paginaActual === 5 ? <Pagination.Next disabled /> : <Pagination.Next /> }
                 {paginaActual === 5 ? <Pagination.Last disabled /> : <Pagination.Last /> }
                 
             </Pagination>
