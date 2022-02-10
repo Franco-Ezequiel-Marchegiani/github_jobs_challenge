@@ -56,7 +56,7 @@ function WorkList() {
                 <Pagination.Item>{10}</Pagination.Item>
                 <Pagination.Next />
               </Pagination>
-              <PaginationWork postTotales={work.length} publicacionesPorPagina={publicacionesPorPagina}/>
+              <PaginationWork postTotales={work} publicacionesPorPagina={publicacionesPorPagina}/>
           </div>
               
     </section>
