@@ -16,9 +16,18 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina}) {
         );
         }
     }
+    //Last steps:
+    /* 
+    - Add the Bootstrap link and script, and write the structure manualy
+     */
   return (
         <div>
             <Pagination>{pageNumbers}</Pagination>
+            <ul className='pagination'>
+                <li className='page-item'>1</li>
+                <li className='page-item'>2</li>
+                <li className='page-item'>3</li>
+            </ul>
         </div>
   );
 }
