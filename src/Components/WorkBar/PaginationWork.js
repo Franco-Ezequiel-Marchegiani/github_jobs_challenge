@@ -22,6 +22,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
   return (
         <div>
             <Pagination >
+                {paginaActual === 1 ? <Pagination.First disabled /> : <Pagination.First /> }
                 <Pagination.First />
                 <Pagination.Prev />
                     {paginaActual === 1 ? "" : <Pagination.Ellipsis />}
