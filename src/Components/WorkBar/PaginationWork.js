@@ -15,7 +15,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
   return (
         <div>
             <Pagination className={postTotales === undefined ? "paginationContainer hiddenPagination" : "paginationContainer"}>
-                {paginaActual === 1 ? <Pagination.First disabled /> : <Pagination.First /> }
+                {paginaActual === 1 ? <Pagination.First disabled /> : <Pagination.First onClick={() => paginacion( 1)}/> }
                 {paginaActual === 1 ? <Pagination.Prev disabled /> : <Pagination.Prev onClick={() => paginacion( paginaActual - 1)}/> }
                     {/* {paginaActual === 1 ? "" : <Pagination.Ellipsis />} */}
                     {pageNumbers.map(numero =>{
