@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './WorkBar.css';
 import WorkBar from './WorkBar'
+import PaginationWork from './PaginationWork'
 import { Pagination, Spinner } from 'react-bootstrap';
 function WorkList() {
   const [work, setWork] = useState();
@@ -45,6 +46,7 @@ function WorkList() {
           })}
         </div>
         }
+          <div> 
               <Pagination className={work === undefined ? "paginationContainer hiddenPagination" : "paginationContainer"}>
                 <Pagination.Prev />
                 <Pagination.Item>{1}</Pagination.Item>
@@ -54,6 +56,9 @@ function WorkList() {
                 <Pagination.Item>{10}</Pagination.Item>
                 <Pagination.Next />
               </Pagination>
+              <PaginationWork postTotales={work.length}/>
+          </div>
+              
     </section>
   );
 }
