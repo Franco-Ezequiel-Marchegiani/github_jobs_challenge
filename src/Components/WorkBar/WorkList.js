@@ -32,7 +32,6 @@ function WorkList() {
     postActual = work.slice(indexPrimerPost,indexUltimoPost);
     console.log(postActual);
   }
-  console.log(postActual);
 
 
   //Cambiar página

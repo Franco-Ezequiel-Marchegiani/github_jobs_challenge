@@ -7,6 +7,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
 
     if(postTotales !== undefined){
         console.log(postTotales.length);
+        console.log(pageNumbers.length);
         
         for (let numero = 1; numero <= Math.ceil(postTotales.length / publicacionesPorPagina); numero++) {
         pageNumbers.push(numero);
@@ -15,7 +16,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
   return (
         <div>
             <Pagination className={postTotales === undefined ? "paginationContainer hiddenPagination" : "paginationContainer"}>
-                {paginaActual === 1 ? <Pagination.First disabled /> : <Pagination.First onClick={() => paginacion( 1)}/> }
+                {paginaActual === 1 ? <Pagination.First disabled /> : <Pagination.First onClick={() => paginacion(1)}/> }
                 {paginaActual === 1 ? <Pagination.Prev disabled /> : <Pagination.Prev onClick={() => paginacion( paginaActual - 1)}/> }
                     {/* {paginaActual === 1 ? "" : <Pagination.Ellipsis />} */}
                     {pageNumbers.map(numero =>{
@@ -24,7 +25,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
                                 </Pagination.Item>
                     })}
                 {paginaActual === 5 ? <Pagination.Next disabled /> : <Pagination.Next onClick={() => paginacion( paginaActual + 1)} /> }
-                {paginaActual === 5 ? <Pagination.Last disabled /> : <Pagination.Last /> }
+                {paginaActual === 5 ? <Pagination.Last disabled /> : <Pagination.Last onClick={() => paginacion(5)}/> }
                 
             </Pagination>
         </div>
