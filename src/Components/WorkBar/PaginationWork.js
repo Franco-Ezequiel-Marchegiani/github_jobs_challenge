@@ -19,6 +19,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina}) {
     //Last steps:
     /* 
     - Add the Bootstrap link and script, and write the structure manualy
+    -Then, keep working with the logic, adding an event and passing the result of the event to the father
      */
   return (
         <div>
