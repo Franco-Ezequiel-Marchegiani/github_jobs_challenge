@@ -9,11 +9,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
         console.log(postTotales.length);
         
         for (let numero = 1; numero <= Math.ceil(postTotales.length / publicacionesPorPagina); numero++) {
-        pageNumbers.push(
-            <Pagination.Item onClick={() => paginacion(numero) } key={numero} active={numero === active}>
-            {numero}
-            </Pagination.Item>,
-        );
+        pageNumbers.push(numero);
         }
     }
     //Last steps:
@@ -25,7 +21,16 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
      */
   return (
         <div>
-            <Pagination >{pageNumbers}</Pagination>
+            <Pagination >
+            <Pagination.First />
+            <Pagination.Prev />
+                {pageNumbers.map(numero =>{
+                    return <Pagination.Item onClick={() => paginacion(numero) } key={numero} active={numero === active}>
+                                {numero}
+                            </Pagination.Item>
+                })}
+            </Pagination>
+            
         </div>
   );
 }
