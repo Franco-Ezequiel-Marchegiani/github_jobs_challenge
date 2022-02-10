@@ -8,10 +8,10 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
     if(postTotales !== undefined){
         console.log(postTotales.length);
         
-        for (let number = 1; number <= Math.ceil(postTotales.length / publicacionesPorPagina); number++) {
+        for (let numero = 1; numero <= Math.ceil(postTotales.length / publicacionesPorPagina); numero++) {
         pageNumbers.push(
-            <Pagination.Item onClick={() => paginacion(number) } key={number} active={number === active}>
-            {number}
+            <Pagination.Item onClick={() => paginacion(numero) } key={numero} active={numero === active}>
+            {numero}
             </Pagination.Item>,
         );
         }
