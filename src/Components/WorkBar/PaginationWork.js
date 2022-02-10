@@ -25,12 +25,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
      */
   return (
         <div>
-            <Pagination onClick={() => paginacion(numero) }>{pageNumbers}</Pagination>
-            <ul className='pagination'>
-                <li className='page-item'>1</li>
-                <li className='page-item'>2</li>
-                <li className='page-item'>3</li>
-            </ul>
+            <Pagination onClick={(numero) => paginacion(numero) }>{pageNumbers}</Pagination>
         </div>
   );
 }
