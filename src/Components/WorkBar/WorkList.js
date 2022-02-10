@@ -27,7 +27,7 @@ function WorkList() {
   //Get Publicaciones Actuales
   const indexUltimoPost = paginaActual * publicacionesPorPagina;
   const indexPrimerPost = indexUltimoPost - publicacionesPorPagina;
-  const postActual
+  const postActual = work.slice()
   return (
     <section className="workListContainer">
         {work === undefined ? 
