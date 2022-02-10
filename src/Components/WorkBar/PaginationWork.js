@@ -1,7 +1,7 @@
 import React from 'react';
 import './WorkBar.css';
 import { Pagination } from 'react-bootstrap';
-function PaginationWork({paginaActual, postTotales, publicacionesPorPagina}) {
+function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, paginacion}) {
     let active = paginaActual;
     let pageNumbers = [];
 
