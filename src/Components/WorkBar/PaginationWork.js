@@ -30,7 +30,8 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
                             </Pagination.Item>
                 })}
             </Pagination>
-            
+            <Pagination.Next />
+            <Pagination.Last />
         </div>
   );
 }
