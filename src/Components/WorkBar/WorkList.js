@@ -23,6 +23,9 @@ function WorkList() {
     .then(response => response.json())
     .then(data => setWork(data.SearchResult.SearchResultItems));
   },[])
+
+  //Get Publicaciones Actuales
+
   return (
     <section className="workListContainer">
         {work === undefined ? 
