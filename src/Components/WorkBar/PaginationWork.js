@@ -21,7 +21,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
      */
   return (
         <div>
-            <Pagination >
+            <Pagination className={postTotales === undefined ? "paginationContainer hiddenPagination" : "paginationContainer"}>
                 {paginaActual === 1 ? <Pagination.First disabled /> : <Pagination.First /> }
                 {paginaActual === 1 ? <Pagination.Prev disabled /> : <Pagination.Prev /> }
                     {paginaActual === 1 ? "" : <Pagination.Ellipsis />}
