@@ -6,7 +6,6 @@ function WorkList() {
   const [work, setWork] = useState();
   const [paginaActual, setPaginaActual] = useState(1);
   const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(5);
-  console.log(work);
   let url = process.env.REACT_APP_API;
   let userAgent = process.env.REACT_APP_API_USERAGENT;  
   let authKey = process.env.REACT_APP_AUTHKEY;
@@ -26,8 +25,13 @@ function WorkList() {
 
   //Get Publicaciones Actuales
   const indexUltimoPost = paginaActual * publicacionesPorPagina;
-  const indexPrimerPost = indexUltimoPost - publicacionesPorPagina;
-  const postActual = work.slice(indexPrimerPost,indexUltimoPost)
+    const indexPrimerPost = indexUltimoPost - publicacionesPorPagina;
+    let postActual
+  if(work !== undefined){
+    postActual = work.slice(indexPrimerPost,indexUltimoPost);
+    console.log(postActual);
+  }
+  console.log(postActual);
   return (
     <section className="workListContainer">
         {work === undefined ? 

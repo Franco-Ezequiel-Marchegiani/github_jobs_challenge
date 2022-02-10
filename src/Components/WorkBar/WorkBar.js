@@ -22,7 +22,7 @@ function WorkBar(props) {
 
   let diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
 
-  console.log(props.duracionJornada);
+  /* console.log(props.duracionJornada); */
   return (
     <section className="workBarContainer">
         <Link className='test' to="/workDetail">
