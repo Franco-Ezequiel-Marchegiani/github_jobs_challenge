@@ -22,16 +22,18 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
   return (
         <div>
             <Pagination >
-            <Pagination.First />
-            <Pagination.Prev />
-                {pageNumbers.map(numero =>{
-                    return <Pagination.Item onClick={() => paginacion(numero) } key={numero} active={numero === active}>
-                                {numero}
-                            </Pagination.Item>
-                })}
+                <Pagination.First />
+                <Pagination.Prev />
+                    {paginaActual === 1 ? "" : <Pagination.Ellipsis />}
+                    {pageNumbers.map(numero =>{
+                        return <Pagination.Item onClick={() => paginacion(numero) } key={numero} active={numero === active}>
+                                    {numero}
+                                </Pagination.Item>
+                    })}
+                <Pagination.Next />
+                {paginaActual === 5 ? <Pagination.Last disabled /> : <Pagination.Last /> }
+                
             </Pagination>
-            <Pagination.Next />
-            <Pagination.Last />
         </div>
   );
 }
