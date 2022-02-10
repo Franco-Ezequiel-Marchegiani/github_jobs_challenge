@@ -25,7 +25,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina}) {
      */
   return (
         <div>
-            <Pagination>{pageNumbers}</Pagination>
+            <Pagination onClick={() => console.log("a") }>{pageNumbers}</Pagination>
             <ul className='pagination'>
                 <li className='page-item'>1</li>
                 <li className='page-item'>2</li>
