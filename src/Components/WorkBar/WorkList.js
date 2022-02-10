@@ -3,9 +3,9 @@ import './WorkBar.css';
 import WorkBar from './WorkBar'
 import { Pagination, Spinner } from 'react-bootstrap';
 function WorkList() {
-  const [work, setWork] = useState()
-  const [paginaActual, setPaginaActual] = useState()
-  const [publicacionesPorPagina, setPublicacionesPorPagina ]
+  const [work, setWork] = useState();
+  const [paginaActual, setPaginaActual] = useState(1);
+  const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(10);
   console.log(work);
   let url = process.env.REACT_APP_API;
   let userAgent = process.env.REACT_APP_API_USERAGENT;  
