@@ -25,8 +25,8 @@ function WorkList() {
 
   //Get Publicaciones Actuales
   const indexUltimoPost = paginaActual * publicacionesPorPagina;
-    const indexPrimerPost = indexUltimoPost - publicacionesPorPagina;
-    let postActual
+  const indexPrimerPost = indexUltimoPost - publicacionesPorPagina;
+  let postActual
   if(work !== undefined){
     postActual = work.slice(indexPrimerPost,indexUltimoPost);
     console.log(postActual);
@@ -40,7 +40,7 @@ function WorkList() {
         </Spinner> 
         :
         <div>
-          {work.map((individualWork, key)=>{
+          {postActual.map((individualWork, key)=>{
           return <WorkBar key={individualWork + key} a={individualWork.MatchedObjectDescriptor.ApplyURI[0]} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration}/>  
           })}
         </div>
