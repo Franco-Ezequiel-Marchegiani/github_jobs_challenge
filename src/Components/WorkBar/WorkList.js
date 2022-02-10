@@ -54,15 +54,6 @@ function WorkList() {
         </div>
         }
           <div> 
-              <Pagination className={work === undefined ? "paginationContainer hiddenPagination" : "paginationContainer"}>
-                <Pagination.Prev />
-                <Pagination.Item>{1}</Pagination.Item>
-                <Pagination.Item active>{2}</Pagination.Item>
-                <Pagination.Item>{3}</Pagination.Item>
-                <Pagination.Ellipsis />
-                <Pagination.Item>{10}</Pagination.Item>
-                <Pagination.Next />
-              </Pagination>
               <PaginationWork paginaActual={paginaActual} postTotales={work} publicacionesPorPagina={publicacionesPorPagina} paginacion={paginacion}/>
           </div>
               
