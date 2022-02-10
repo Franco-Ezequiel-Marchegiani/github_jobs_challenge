@@ -33,6 +33,13 @@ function WorkList() {
     console.log(postActual);
   }
   console.log(postActual);
+
+
+  //Cambiar página
+  
+
+
+
   return (
     <section className="workListContainer">
         {work === undefined ? 
