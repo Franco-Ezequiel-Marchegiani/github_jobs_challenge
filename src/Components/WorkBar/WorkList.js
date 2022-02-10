@@ -56,7 +56,7 @@ function WorkList() {
                 <Pagination.Item>{10}</Pagination.Item>
                 <Pagination.Next />
               </Pagination>
-              <PaginationWork paginaActual={paginaActual} postTotales={work} publicacionesPorPagina={publicacionesPorPagina}/>
+              <PaginationWork paginaActual={paginaActual} postTotales={work} publicacionesPorPagina={publicacionesPorPagina} paginacion={}/>
           </div>
               
     </section>
