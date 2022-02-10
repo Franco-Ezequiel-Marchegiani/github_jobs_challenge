@@ -5,7 +5,7 @@ import { Pagination, Spinner } from 'react-bootstrap';
 function WorkList() {
   const [work, setWork] = useState();
   const [paginaActual, setPaginaActual] = useState(1);
-  const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(10);
+  const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(5);
   console.log(work);
   let url = process.env.REACT_APP_API;
   let userAgent = process.env.REACT_APP_API_USERAGENT;  
@@ -27,7 +27,7 @@ function WorkList() {
   //Get Publicaciones Actuales
   const indexUltimoPost = paginaActual * publicacionesPorPagina;
   const indexPrimerPost = indexUltimoPost - publicacionesPorPagina;
-  const postActual = work.slice()
+  const postActual = work.slice(indexPrimerPost,indexUltimoPost)
   return (
     <section className="workListContainer">
         {work === undefined ? 
