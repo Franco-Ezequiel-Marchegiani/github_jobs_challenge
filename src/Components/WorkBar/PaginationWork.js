@@ -24,8 +24,6 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
             <Pagination >
                 {paginaActual === 1 ? <Pagination.First disabled /> : <Pagination.First /> }
                 {paginaActual === 1 ? <Pagination.Prev disabled /> : <Pagination.Prev /> }
-                <Pagination.First />
-                <Pagination.Prev />
                     {paginaActual === 1 ? "" : <Pagination.Ellipsis />}
                     {pageNumbers.map(numero =>{
                         return <Pagination.Item onClick={() => paginacion(numero) } key={numero} active={numero === active}>
