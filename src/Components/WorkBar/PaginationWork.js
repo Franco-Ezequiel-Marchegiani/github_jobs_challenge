@@ -10,7 +10,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
         
         for (let number = 1; number <= Math.ceil(postTotales.length / publicacionesPorPagina); number++) {
         pageNumbers.push(
-            <Pagination.Item key={number} active={number === active}>
+            <Pagination.Item onClick={() => paginacion(number) } key={number} active={number === active}>
             {number}
             </Pagination.Item>,
         );
@@ -25,7 +25,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
      */
   return (
         <div>
-            <Pagination onClick={(numero) => paginacion(numero) }>{pageNumbers}</Pagination>
+            <Pagination >{pageNumbers}</Pagination>
         </div>
   );
 }
