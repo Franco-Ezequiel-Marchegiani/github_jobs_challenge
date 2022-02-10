@@ -36,7 +36,7 @@ function WorkList() {
 
 
   //Cambiar página
-  const paginacion
+  const paginacion = () =>
 
 
 
