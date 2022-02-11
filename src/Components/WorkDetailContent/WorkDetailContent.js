@@ -8,6 +8,7 @@ function WorkDetailContent(props) {
      const { id } = useParams()
 
      let url = process.env.REACT_APP_API;
+     let userAgent = process.env.REACT_APP_API_USERAGENT;  
      
      console.log(id);
 
