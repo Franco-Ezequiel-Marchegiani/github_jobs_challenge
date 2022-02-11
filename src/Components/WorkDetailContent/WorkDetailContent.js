@@ -30,11 +30,22 @@ function WorkDetailContent(props) {
         filtroPorId = work.find( individualWork => individualWork.MatchedObjectId === id)
         console.log(filtroPorId);
      }
-
+        /* 
+        ApplicationCloseDate      --- finalizacionBusqueda
+        OrganizationName          --- nombreOrganizacion
+        PositionLocationDisplay   --- ubicacionPuesto
+        PositionTitle             --- tituloPuesto
+        PublicationStartDate      --- inicioFechaPublicacion
+        PositionSchedule          --- duracionJornada
+        PositionRemuneration      --- remuneracionMax-min
+        MatchedObjectId           --- idPuestoTrabajo
+        */
+       /* Ahora solo queda pasar toda la información del objeto de la variable "filtroPorId"
+       Y pasarlo a la vista */
         return (
                 <section className="workDetailContainer">
                         <div className='infoHeader'>
-                        <h1>Front-End Software Engineer</h1>
+                        <h1>{filtroPorId.MatchedObjectDescriptor.PositionTitle}</h1>
                         <button>Full time</button>
                         <span><i className="far fa-clock"></i>5 days ago</span>
                         </div>
