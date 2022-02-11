@@ -23,13 +23,12 @@ function WorkBar(props) {
 
   let diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
 
+  /* Set the link to Work Detail */
   let linkDetailBase = "/workDetail/"
   let linkCompleto = linkDetailBase + props.idPuestoTrabajo
-  console.log(linkCompleto);
-  /* console.log(props.duracionJornada); */
   return (
     <section className="workBarContainer">
-        <Link className='test' to={linkDetailBase}>
+        <Link className='test' to={linkCompleto}>
           <main className='jobBarContainer'>
                 <div className='workBarImgContainer'>
                   <img src={LogoEj} alt="Logo Empresa" />
