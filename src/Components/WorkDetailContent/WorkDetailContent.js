@@ -25,6 +25,9 @@ function WorkDetailContent(props) {
       console.log(work);
      console.log(id);
 
+     let filtroPorId
+     
+
         return (
                 <section className="workDetailContainer">
                         <div className='infoHeader'>
