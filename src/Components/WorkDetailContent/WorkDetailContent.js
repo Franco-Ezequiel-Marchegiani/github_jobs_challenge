@@ -26,7 +26,9 @@ function WorkDetailContent(props) {
      console.log(id);
 
      let filtroPorId
-     
+     if(work !== undefined){
+        
+     }
 
         return (
                 <section className="workDetailContainer">
