@@ -2,9 +2,12 @@ import React from 'react';
 import './WorkDetailContent.css';
 import LogoEj from '../../Images/imglogoej.jpg'
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 function WorkDetailContent(props) {
-        const { id } = useParams()
-        console.log(id);
+     const [work, setWork] = useState();
+     const { id } = useParams()
+     console.log(id);
+
         return (
                 <section className="workDetailContainer">
                         <div className='infoHeader'>
