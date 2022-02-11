@@ -12,7 +12,11 @@ function WorkDetailContent(props) {
      let authKey = process.env.REACT_APP_AUTHKEY;
      let header = {
        method: 'GET',      
-       
+       headers: {          
+           "Host": "localhost:3000",          
+           "User-Agent": userAgent,          
+           "Authorization-Key": authKey      
+       }  
      }
      console.log(id);
 
