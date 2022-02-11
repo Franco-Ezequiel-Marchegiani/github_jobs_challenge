@@ -14,7 +14,6 @@ function WorkBar(props) {
   PositionRemuneration      --- remuneracionMax-min
   MatchedObjectId           --- idPuestoTrabajo
    */
-  console.log(props.idPuestoTrabajo);
   let fechaPublicacion = new Date(props.inicioFechaPublicacion);
   let fechaActual = new Date();
 
@@ -24,7 +23,9 @@ function WorkBar(props) {
 
   let diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
 
-  let linkDetailBase = "/workDetail"
+  let linkDetailBase = "/workDetail/"
+  let linkCompleto = linkDetailBase + props.idPuestoTrabajo
+  console.log(linkCompleto);
   /* console.log(props.duracionJornada); */
   return (
     <section className="workBarContainer">
