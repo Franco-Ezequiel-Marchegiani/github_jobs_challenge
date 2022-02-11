@@ -6,7 +6,7 @@ import { Pagination, Spinner } from 'react-bootstrap';
 function WorkList() {
   const [work, setWork] = useState();
   const [paginaActual, setPaginaActual] = useState(1);
-  const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(3);
+  const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(5);
   let url = process.env.REACT_APP_API;
   let userAgent = process.env.REACT_APP_API_USERAGENT;  
   let authKey = process.env.REACT_APP_AUTHKEY;
@@ -18,11 +18,11 @@ function WorkList() {
         "Authorization-Key": authKey      
     }  
   }
-   useEffect(()=>{
+    /* useEffect(()=>{
     fetch(url,header)
     .then(response => response.json())
     .then(data => setWork(data.SearchResult.SearchResultItems));
-  },[])
+  },[])  */
 
   //Get Publicaciones Actuales
   const indexUltimoPost = paginaActual * publicacionesPorPagina;
@@ -38,25 +38,29 @@ function WorkList() {
   const paginacion = (numeroPagina) => setPaginaActual(numeroPagina)
 
 
-
-  return (
-    <section className="workListContainer">
-        {work === undefined ? 
-        <Spinner className="spinnerLoading" animation="border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </Spinner> 
-        :
-        <div>
-          {postActual.map((individualWork, key)=>{
-          return <WorkBar key={individualWork + key} a={individualWork.MatchedObjectDescriptor.ApplyURI[0]} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration}/>  
-          })}
-        </div>
-        }
-          <div> 
-              <PaginationWork paginaActual={paginaActual} postTotales={work} publicacionesPorPagina={publicacionesPorPagina} paginacion={paginacion}/>
-          </div>
-              
-    </section>
-  );
+/* 
+{work === undefined ? "loadingContentHome" : "workListContainer"}
+ */
+  return{
+    work,
+    render:(  
+        <section className="workListContainer">
+            {work === undefined ? 
+              <Spinner className="spinnerLoading" animation="border" role="status">
+                  <span className="visually-hidden">Loading...</span>
+              </Spinner> 
+              :
+              <div>
+                  {postActual.map((individualWork, key)=>{
+                      return <WorkBar key={individualWork + key} a={individualWork.MatchedObjectDescriptor.ApplyURI[0]} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration}/>  
+                  })}
+                  <div> 
+                      <PaginationWork paginaActual={paginaActual} postTotales={work} publicacionesPorPagina={publicacionesPorPagina} paginacion={paginacion}/>
+                  </div>
+              </div>
+            }
+                
+      </section>
+  )};
 }
 export default WorkList;

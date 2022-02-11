@@ -114,8 +114,7 @@
 }
 .spinnerLoading{
     position: relative;
-    top: 50%;
-    right: 50%;
+    left: 49vw;
 }
 @media only screen and (min-width: 1000px){
     .jobBarContainer{
@@ -129,8 +128,12 @@
         bottom: 0;
     }
     .workListContainer{
+        position: relative;
         max-width: 100%;
         margin-left: 32px;
+    }
+    .loadingContentHome{
+        
     }
     .workBarDaysContainer{
         padding-right: 12px;
@@ -166,6 +169,11 @@
         max-width: 25ch;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+    .spinnerLoading{
+        position: relative;
+        bottom: 250px;
+        right: 25vw;
     }
 }
 @media only screen and (min-width: 1100px){

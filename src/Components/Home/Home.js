@@ -6,13 +6,14 @@ import WorkList from '../WorkBar/WorkList';
 import './Home.css';
 
 function Home() {
+  const {work, render} = WorkList();
   return (
     <main className="containreAll">
       <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
       <Header/>
-      <section className='containetMain'>
+      <section className={work === undefined ? "loadingContentHome" : "containetMain"}>
           <Sidebar/>
-          <WorkList/>
+          {render}
       </section>
       <Footer/>
     </main>
