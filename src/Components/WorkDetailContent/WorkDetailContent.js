@@ -6,6 +6,9 @@ import { useState } from 'react';
 function WorkDetailContent(props) {
      const [work, setWork] = useState();
      const { id } = useParams()
+
+     let url = process.env.REACT_APP_API;
+     
      console.log(id);
 
         return (
