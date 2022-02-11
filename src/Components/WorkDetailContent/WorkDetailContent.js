@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './WorkDetailContent.css';
 import LogoEj from '../../Images/imglogoej.jpg'
 import { useParams } from 'react-router-dom';
-import { useState } from 'react';
 function WorkDetailContent(props) {
      const [work, setWork] = useState();
      const { id } = useParams()
@@ -18,6 +17,12 @@ function WorkDetailContent(props) {
            "Authorization-Key": authKey      
        }  
      }
+     useEffect(()=>{
+        fetch(url,header)
+        .then(response => response.json())
+        .then(data => setWork(data.SearchResult.SearchResultItems));
+      },[])
+      console.log(work);
      console.log(id);
 
         return (
