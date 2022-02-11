@@ -9,6 +9,7 @@ function WorkDetailContent(props) {
 
      let url = process.env.REACT_APP_API;
      let userAgent = process.env.REACT_APP_API_USERAGENT;  
+     let authKey = process.env.REACT_APP_AUTHKEY;
      
      console.log(id);
 
