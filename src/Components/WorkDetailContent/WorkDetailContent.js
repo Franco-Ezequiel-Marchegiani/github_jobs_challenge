@@ -27,7 +27,8 @@ function WorkDetailContent(props) {
 
      let filtroPorId
      if(work !== undefined){
-        
+        filtroPorId = work.find( individualWork => individualWork.MatchedObjectId === id)
+        console.log(filtroPorId);
      }
 
         return (
