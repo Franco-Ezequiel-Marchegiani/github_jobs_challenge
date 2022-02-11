@@ -11,7 +11,8 @@ function WorkDetailContent(props) {
      let userAgent = process.env.REACT_APP_API_USERAGENT;  
      let authKey = process.env.REACT_APP_AUTHKEY;
      let header = {
-        
+       method: 'GET',      
+       
      }
      console.log(id);
 
