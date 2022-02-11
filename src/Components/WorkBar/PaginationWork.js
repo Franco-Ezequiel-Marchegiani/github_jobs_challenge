@@ -4,11 +4,7 @@ import { Pagination } from 'react-bootstrap';
 function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, paginacion}) {
     let active = paginaActual;
     let pageNumbers = [];
-
     if(postTotales !== undefined){
-        console.log(postTotales.length);
-        console.log(pageNumbers.length);
-        
         for (let numero = 1; numero <= Math.ceil(postTotales.length / publicacionesPorPagina); numero++) {
         pageNumbers.push(numero);
         }
@@ -25,7 +21,7 @@ function PaginationWork({paginaActual, postTotales, publicacionesPorPagina, pagi
                                 </Pagination.Item>
                     })}
                 {paginaActual === 5 ? <Pagination.Next disabled /> : <Pagination.Next onClick={() => paginacion( paginaActual + 1)} /> }
-                {paginaActual === 5 ? <Pagination.Last disabled /> : <Pagination.Last onClick={() => paginacion(5)}/> }
+                {paginaActual === 5 ? <Pagination.Last disabled /> : <Pagination.Last onClick={() => paginacion(Math.ceil(postTotales.length / publicacionesPorPagina))}/> }
                 
             </Pagination>
         </div>

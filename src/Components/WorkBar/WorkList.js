@@ -6,7 +6,7 @@ import { Pagination, Spinner } from 'react-bootstrap';
 function WorkList() {
   const [work, setWork] = useState();
   const [paginaActual, setPaginaActual] = useState(1);
-  const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(5);
+  const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(3);
   let url = process.env.REACT_APP_API;
   let userAgent = process.env.REACT_APP_API_USERAGENT;  
   let authKey = process.env.REACT_APP_AUTHKEY;
