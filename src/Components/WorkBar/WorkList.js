@@ -30,7 +30,6 @@ function WorkList() {
   let postActual
   if(work !== undefined){
     postActual = work.slice(indexPrimerPost,indexUltimoPost);
-    console.log(postActual);
   }
 
 
