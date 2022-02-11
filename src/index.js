@@ -11,7 +11,7 @@ ReactDOM.render(
       <BrowserRouter>
           <Routes>
             <Route path="/" element={<App />} />
-            <Route path="/workDetail" element={<WorkDetail />} />
+            <Route path="/workDetail/:id" element={<WorkDetail />} />
           </Routes>
       </BrowserRouter>
     </React.StrictMode>,

@@ -18,11 +18,11 @@ function WorkList() {
         "Authorization-Key": authKey      
     }  
   }
-    /* useEffect(()=>{
+  useEffect(()=>{
     fetch(url,header)
     .then(response => response.json())
     .then(data => setWork(data.SearchResult.SearchResultItems));
-  },[])  */
+  },[])
 
   //Get Publicaciones Actuales
   const indexUltimoPost = paginaActual * publicacionesPorPagina;
@@ -52,7 +52,7 @@ function WorkList() {
               :
               <div>
                   {postActual.map((individualWork, key)=>{
-                      return <WorkBar key={individualWork + key} a={individualWork.MatchedObjectDescriptor.ApplyURI[0]} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration}/>  
+                      return <WorkBar key={individualWork.MatchedObjectId} a={individualWork.MatchedObjectDescriptor.ApplyURI[0]} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration} idPuestoTrabajo={individualWork.MatchedObjectId}/>  
                   })}
                   <div> 
                       <PaginationWork paginaActual={paginaActual} postTotales={work} publicacionesPorPagina={publicacionesPorPagina} paginacion={paginacion}/>

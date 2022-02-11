@@ -12,7 +12,9 @@ function WorkBar(props) {
   PublicationStartDate      --- inicioFechaPublicacion
   PositionSchedule          --- duracionJornada
   PositionRemuneration      --- remuneracionMax-min
+  MatchedObjectId           --- idPuestoTrabajo
    */
+  console.log(props.idPuestoTrabajo);
   let fechaPublicacion = new Date(props.inicioFechaPublicacion);
   let fechaActual = new Date();
 
@@ -25,7 +27,7 @@ function WorkBar(props) {
   /* console.log(props.duracionJornada); */
   return (
     <section className="workBarContainer">
-        <Link className='test' to="/workDetail">
+        <Link className='test' to={}>
           <main className='jobBarContainer'>
                 <div className='workBarImgContainer'>
                   <img src={LogoEj} alt="Logo Empresa" />
