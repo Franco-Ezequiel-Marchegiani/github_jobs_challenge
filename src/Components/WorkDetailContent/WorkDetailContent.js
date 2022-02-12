@@ -45,9 +45,10 @@ function WorkDetailContent(props) {
        //Date ago
        let diasTranscurridos
        if(work !== undefined){
-                let fechaPublicacion = new Date(filtroPorId.MatchedObjectDescriptor.PublicationStartDate);
-                console.log(fechaPublicacion);
-                let fechaActual = new Date();
+            let fechaPublicacion = new Date(filtroPorId.MatchedObjectDescriptor.PublicationStartDate);
+            console.log(fechaPublicacion);
+            let fechaActual = new Date();
+            let miliSegundosDia = 24 * 60 * 60 * 1000;
        }
         return (
                 <section className="workDetailContainer">
