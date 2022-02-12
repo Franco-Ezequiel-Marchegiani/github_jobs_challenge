@@ -42,6 +42,7 @@ function WorkDetailContent(props) {
         */
        /* Ahora solo queda pasar toda la información del objeto de la variable "filtroPorId"
        Y pasarlo a la vista */
+       //Date ago
         return (
                 <section className="workDetailContainer">
                         <div className='infoHeader'>
