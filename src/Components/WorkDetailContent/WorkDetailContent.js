@@ -49,6 +49,7 @@ function WorkDetailContent(props) {
             console.log(fechaPublicacion);
             let fechaActual = new Date();
             let miliSegundosDia = 24 * 60 * 60 * 1000;
+            let miliSegundosTranscurridos = Math.abs(fechaPublicacion.getTime() - fechaActual.getTime());
        }
         return (
                 <section className="workDetailContainer">
