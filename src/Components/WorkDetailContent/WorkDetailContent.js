@@ -47,6 +47,7 @@ function WorkDetailContent(props) {
        if(work !== undefined){
                 let fechaPublicacion = new Date(filtroPorId.MatchedObjectDescriptor.PublicationStartDate);
                 console.log(fechaPublicacion);
+                let fechaActual = new Date();
        }
         return (
                 <section className="workDetailContainer">
