@@ -28,7 +28,7 @@ function WorkDetailContent(props) {
      let filtroPorId
      if(work !== undefined){
         filtroPorId = work.find( individualWork => individualWork.MatchedObjectId === id)
-        console.log(filtroPorId);
+        console.log(filtroPorId.MatchedObjectDescriptor.PositionTitle);
      }
         /* 
         ApplicationCloseDate      --- finalizacionBusqueda
@@ -45,14 +45,14 @@ function WorkDetailContent(props) {
         return (
                 <section className="workDetailContainer">
                         <div className='infoHeader'>
-                        <h1>{filtroPorId.MatchedObjectDescriptor.PositionTitle}</h1>
-                        <button>Full time</button>
-                        <span><i className="far fa-clock"></i>5 days ago</span>
+                                <h1>{work !== undefined ? filtroPorId.MatchedObjectDescriptor.PositionTitle : ""}</h1>
+                                <button>Full time</button>
+                                <span><i className="far fa-clock"></i>5 days ago</span>
                         </div>
                         <div className='infoEmpresaWorkDetail'>
-                        <img src={LogoEj} alt="" />
-                        <h2>Kasisto</h2>
-                        <span><i className="fas fa-globe-americas"></i>New York</span>
+                                <img src={LogoEj} alt="" />
+                                <h2>Kasisto</h2>
+                                <span><i className="fas fa-globe-americas"></i>New York</span>
                         </div>
                         <section className='textContainerWorkDetail'>
                                 <div className='infoDigitalExperiences'>
