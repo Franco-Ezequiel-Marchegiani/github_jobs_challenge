@@ -43,9 +43,9 @@ function WorkDetailContent(props) {
        /* Ahora solo queda pasar toda la información del objeto de la variable "filtroPorId"
        Y pasarlo a la vista */
        //Date ago
-       let fechaPublicacion
+       let diasTranscurridos
        if(work !== undefined){
-                fechaPublicacion = new Date(filtroPorId.MatchedObjectDescriptor.PublicationStartDate);
+                let fechaPublicacion = new Date(filtroPorId.MatchedObjectDescriptor.PublicationStartDate);
                 console.log(fechaPublicacion);
        }
         return (
