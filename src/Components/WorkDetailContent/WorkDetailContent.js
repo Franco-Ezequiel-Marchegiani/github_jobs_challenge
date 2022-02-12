@@ -50,7 +50,9 @@ function WorkDetailContent(props) {
             let fechaActual = new Date();
             let miliSegundosDia = 24 * 60 * 60 * 1000;
             let miliSegundosTranscurridos = Math.abs(fechaPublicacion.getTime() - fechaActual.getTime());
+            diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
        }
+       console.log(diasTranscurridos);
         return (
                 <section className="workDetailContainer">
                         <div className='infoHeader'>
