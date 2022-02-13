@@ -70,7 +70,7 @@ function WorkDetailContent(props) {
                         <div className='infoEmpresaWorkDetail'>
                                 <img src={LogoEj} alt="" />
                                 <h2>{filtroPorId.MatchedObjectDescriptor.OrganizationName}</h2>
-                                <span><i className="fas fa-globe-americas"></i>New York</span>
+                                <span><i className="fas fa-globe-americas"></i>{filtroPorId.MatchedObjectDescriptor.PositionLocationDisplay}</span>
                         </div>
                         <section className='textContainerWorkDetail'>
                                 <div className='infoDigitalExperiences'>
