@@ -43,7 +43,7 @@ function WorkDetailContent(props) {
         */
        /* Ahora solo queda pasar toda la información del objeto de la variable "filtroPorId"
        Y pasarlo a la vista */
-       
+
        //Date ago
        let diasTranscurridos
        if(work !== undefined){
@@ -57,6 +57,7 @@ function WorkDetailContent(props) {
        console.log(diasTranscurridos);
         return (
               <section className="workDetailContainer">
+                      {/* Hay un error al colocar el spiner */}
                 {work === undefined ? 
                    <Spinner className="spinnerLoading" animation="border" role="status">
                         <span className="visually-hidden">Loading...</span>
