@@ -43,6 +43,7 @@ function WorkDetailContent(props) {
         */
        /* Ahora solo queda pasar toda la información del objeto de la variable "filtroPorId"
        Y pasarlo a la vista */
+       
        //Date ago
        let diasTranscurridos
        if(work !== undefined){
