@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './WorkDetailContent.css';
 import LogoEj from '../../Images/imglogoej.jpg'
 import { useParams } from 'react-router-dom';
+import { Spinner } from 'react-bootstrap';
 function WorkDetailContent(props) {
      const [work, setWork] = useState();
      const { id } = useParams()
