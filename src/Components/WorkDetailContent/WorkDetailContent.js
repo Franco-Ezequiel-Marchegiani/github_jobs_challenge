@@ -65,7 +65,7 @@ function WorkDetailContent(props) {
                         <div className='infoHeader'>
                                 <h1>{filtroPorId.MatchedObjectDescriptor.PositionTitle}</h1>
                                 <button>Full time</button>
-                                <span><i className="far fa-clock"></i>{diasTranscurridos !== undefined ? diasTranscurridos : ""} days ago</span>
+                                <span><i className="far fa-clock"></i>{diasTranscurridos} days ago</span>
                         </div>
                         <div className='infoEmpresaWorkDetail'>
                                 <img src={LogoEj} alt="" />
