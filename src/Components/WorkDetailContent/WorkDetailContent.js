@@ -63,7 +63,7 @@ function WorkDetailContent(props) {
                    :
                    <section>
                         <div className='infoHeader'>
-                                <h1>{work !== undefined ? filtroPorId.MatchedObjectDescriptor.PositionTitle : ""}</h1>
+                                <h1>{filtroPorId.MatchedObjectDescriptor.PositionTitle}</h1>
                                 <button>Full time</button>
                                 <span><i className="far fa-clock"></i>{diasTranscurridos !== undefined ? diasTranscurridos : ""} days ago</span>
                         </div>
