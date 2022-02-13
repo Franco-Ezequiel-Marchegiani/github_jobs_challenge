@@ -54,7 +54,13 @@ function WorkDetailContent(props) {
        }
        console.log(diasTranscurridos);
         return (
-                <section className="workDetailContainer">
+              <section className="workDetailContainer">
+                {work === undefined ? 
+                   <Spinner className="spinnerLoading" animation="border" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                   </Spinner>  
+                   :
+                   <section>
                         <div className='infoHeader'>
                                 <h1>{work !== undefined ? filtroPorId.MatchedObjectDescriptor.PositionTitle : ""}</h1>
                                 <button>Full time</button>
@@ -89,6 +95,8 @@ function WorkDetailContent(props) {
                                         <p>We welcome your cover letter with a description of your previous complete experience and your resume. Applicants must be authorized to work in the US as we are unable to sponsor. Kasisto is an equal opportunity employer.</p>
                                 </div>
                         </section>
+                   </section>
+                   }
                 </section>
         );
 }
