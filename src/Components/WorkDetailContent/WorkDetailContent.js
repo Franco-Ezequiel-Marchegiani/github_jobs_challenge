@@ -21,7 +21,6 @@ function WorkDetailContent(props) {
      useEffect(()=>{
         fetch(url,header)
         .then(response => response.json())
-        .then(data => setWork(data.SearchResult.SearchResultItems));
       },[])
       console.log(work);
      console.log(id);

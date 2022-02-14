@@ -39,4 +39,7 @@
     .howToApplyParagraph{
         padding-right: 40px;
     }
+    .sidebarWorkDetailContainer{
+        max-width: 30%;
+    }
 }
