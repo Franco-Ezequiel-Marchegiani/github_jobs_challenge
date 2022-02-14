@@ -82,6 +82,10 @@
 .infoLocation{
     padding-bottom: 40px;
 }
+.spinnerLoadingWorkDetail{
+    position: relative;
+    left: 50vw;
+}
 @media only screen and (min-width: 1000px){
     .infoHeader{
         display: flex;
