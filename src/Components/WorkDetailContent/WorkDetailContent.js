@@ -58,7 +58,7 @@ function WorkDetailContent(props) {
               <section className="workDetailContainer">
                       {/* Hay un error al colocar el spiner */}
                 {work === undefined ? 
-                   <Spinner className="spinnerLoading" animation="border" role="status">
+                   <Spinner className="spinnerLoadingWorkDetail" animation="border" role="status">
                         <span className="visually-hidden">Loading...</span>
                    </Spinner>  
                    :
