@@ -101,7 +101,6 @@ function WorkDetailContent(props) {
                                 <div className='infoDigitalExperiences'>
                                         <p>Humanizing Digital Experiences®</p>
                                         <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.AgencyMarketingStatement}</p>
-                                        <p>Financial institutions around the world use KAI, including DBS Bank, J.P. Morgan, Mastercard, Standard Chartered, TD Bank, and Manulife Bank among others. They chose KAI for its proven track record to drive business results while improving customer experiences. The platform is used by millions of consumers around the world, all the time, across multiple channels, in different languages, and is optimized for performance, scalability, security, and compliance.</p>
                                 </div>
                                 <div className='infoPosition'>
                                         <p>This position</p>
