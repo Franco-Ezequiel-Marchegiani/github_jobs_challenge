@@ -59,8 +59,9 @@ function WorkDetailContent(props) {
 
        //Información extraer info Trabajo:
        /* 
-       AgencyContactEmail               mail de contacto
-       AgencyMarketingStatement         Información sobre la agencia
+       Parrafo 1:
+          AgencyMarketingStatement         Información sobre la agencia
+
        */
         return (
               <section className="workDetailContainer">
