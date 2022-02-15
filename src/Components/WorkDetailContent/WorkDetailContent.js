@@ -54,8 +54,6 @@ function WorkDetailContent(props) {
             let miliSegundosTranscurridos = Math.abs(fechaPublicacion.getTime() - fechaActual.getTime());
             diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
        }
-       console.log(filtroPorId.MatchedObjectDescriptor.UserArea.Details);
-
 
        //Información extraer info Trabajo:
        /* 
@@ -111,8 +109,7 @@ function WorkDetailContent(props) {
                                 </div>
                                 <div className='infoWhatWillBeDoing'>
                                         <p>What you'll be doing</p>
-                                        <p>Working closely with clients and internal engineering, product and design teams to gather requirements Building and integrating front-end applications with CSS, HTML, Javascript, jQuery, Vue.js, Webpack, Handlebars.js, LESS, Backbone, Python, Django and Java Working to improve user experience and functionality for tools Writing testable code utilizing common front-end unit and BDD testing frameworks What you need for this position</p>
-                                        <p>3+ years in client-side web development with CSS, HTML, Javascript and jQuery Proven, full-stack front-end experience using Python and Django Other Modern Web Framework(s) experience is a plus (React, Vue, Angular, Ember) Experience working collaboratively to build scalable, modular, production software in an Agile environment Experience using RESTful json services Node.js and API development familiarity is plus D3.js is a plus</p>
+                                        <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.MajorDuties}</p>
                                 </div>
                                 <div className='infoWhatWeOffer'>
                                         <p>What we offer:</p>
