@@ -54,7 +54,14 @@ function WorkDetailContent(props) {
             let miliSegundosTranscurridos = Math.abs(fechaPublicacion.getTime() - fechaActual.getTime());
             diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
        }
-       console.log(diasTranscurridos);
+       console.log(filtroPorId.MatchedObjectDescriptor.UserArea.Details);
+
+
+       //Información extraer info Trabajo:
+       /* 
+       AgencyContactEmail               mail de contacto
+       AgencyMarketingStatement         Información sobre la agencia
+       */
         return (
               <section className="workDetailContainer">
                       {/* Hay un error al colocar el spiner */}
