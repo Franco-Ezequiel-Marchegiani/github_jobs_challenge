@@ -119,7 +119,6 @@ function WorkDetailContent(props) {
                                         <p><Link to={filtroPorId.MatchedObjectDescriptor.UserArea.Details.ApplyOnlineUrl}>Click here to apply</Link></p>
                                         :
                                         ""} 
-                                        <p>What we offer:</p>
                                 </div>
                                 <div className='infoLocation'>
                                         <p>Location - {filtroPorId.MatchedObjectDescriptor.PositionLocationDisplay}</p>
