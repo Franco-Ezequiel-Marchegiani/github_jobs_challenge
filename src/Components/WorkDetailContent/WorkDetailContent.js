@@ -74,6 +74,7 @@ function WorkDetailContent(props) {
        Parrafo4:
        BenefitsUrl                      Link con beneficios del puesto
        AgencyContactEmail               mail de contacto
+       AgencyContactPhone               Numero
        
        */
         return (
