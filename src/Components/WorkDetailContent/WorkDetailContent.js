@@ -104,7 +104,7 @@ function WorkDetailContent(props) {
                                 </div>
                                 <div className='infoPosition'>
                                         <p>This position</p>
-                                        <p>We are looking for a Full-Stack, client side software engineer to help build and integrate responsive chat interfaces, analytics dashboards and reporting tools.</p>
+                                        <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.RequiredDocuments}</p>
                                 </div>
                                 <div className='infoWhatWillBeDoing'>
                                         <p>What you'll be doing</p>
