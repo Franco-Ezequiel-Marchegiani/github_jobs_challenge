@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './WorkDetailContent.css';
 import LogoEj from '../../Images/imglogoej.jpg'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
 function WorkDetailContent(props) {
      const [work, setWork] = useState();
@@ -109,11 +109,11 @@ function WorkDetailContent(props) {
                                 </div>
                                 <div className='infoWhatWillBeDoing'>
                                         <p>What you'll be doing</p>
-                                        <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.MajorDuties}</p>
+                                        <p></p>
                                 </div>
                                 <div className='infoWhatWeOffer'>
                                         <p>What we offer:</p>
-                                        <p>Competitive compensation package Ground floor opportunity within rapidly growing tech startup Great collaborative team environment Full Benefits Fun perks</p>
+                                        <p>You can see the benefits that we offer to you clicking <Link to={filtroPorId.MatchedObjectDescriptor.UserArea.Details.BenefitsUrl}>this link</Link> </p>
                                 </div>
                                 <div className='infoLocation'>
                                         <p>Location - {filtroPorId.MatchedObjectDescriptor.PositionLocationDisplay}</p>
