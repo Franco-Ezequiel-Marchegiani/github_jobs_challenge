@@ -74,9 +74,7 @@ function WorkDetailContent(props) {
        Parrafo4:
        BenefitsUrl                      Link con beneficios del puesto
        AgencyContactEmail               mail de contacto
-       AgencyContactPhone               Numero
-       HowToApply                       Cómo aplicar
-       ApplyOnlineUrl                   Link para aplicar de manera Online
+       
        */
         return (
               <section className="workDetailContainer">
