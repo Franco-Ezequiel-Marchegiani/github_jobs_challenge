@@ -64,6 +64,7 @@ function WorkDetailContent(props) {
 
        Parrafo2:
        RequiredDocuments                Información importante
+       Requirements                     Requisitos                 
      
        */
         return (
