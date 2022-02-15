@@ -65,7 +65,13 @@ function WorkDetailContent(props) {
        Parrafo2:
        RequiredDocuments                Información importante
        Requirements                     Requisitos                 
-     
+       Education                        Educación
+       Evaluations                      Evaluaciones
+       
+       Parrafo3: Es un array, iterarlo
+       MajorDuties                      Obligaciones importantes
+
+       
        */
         return (
               <section className="workDetailContainer">
