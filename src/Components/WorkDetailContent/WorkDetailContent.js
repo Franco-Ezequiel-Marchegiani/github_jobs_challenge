@@ -100,7 +100,7 @@ function WorkDetailContent(props) {
                         <section className='textContainerWorkDetail'>
                                 <div className='infoDigitalExperiences'>
                                         <p>Humanizing Digital Experiences®</p>
-                                        <p>Kasisto’s Digital Experience Platform, KAI, is designed for financial institutions to deliver the industry’s most amazing Conversational AI powered intelligent virtual assistants to their customers. KAI is open and extensible, and also fluent in the language of banking and finance. From simple retail transactions to the complex demands of corporate banks and wealth management, financial institutions can deliver meaningful digital interactions with KAI that help build their digital brand.</p>
+                                        <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.AgencyMarketingStatement}</p>
                                         <p>Financial institutions around the world use KAI, including DBS Bank, J.P. Morgan, Mastercard, Standard Chartered, TD Bank, and Manulife Bank among others. They chose KAI for its proven track record to drive business results while improving customer experiences. The platform is used by millions of consumers around the world, all the time, across multiple channels, in different languages, and is optimized for performance, scalability, security, and compliance.</p>
                                 </div>
                                 <div className='infoPosition'>
