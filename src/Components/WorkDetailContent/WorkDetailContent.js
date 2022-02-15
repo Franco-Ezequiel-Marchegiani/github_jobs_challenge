@@ -114,6 +114,9 @@ function WorkDetailContent(props) {
                                 <div className='infoWhatWeOffer'>
                                         <p>What we offer:</p>
                                         <p>You can see the benefits that we offer to you clicking <Link to={filtroPorId.MatchedObjectDescriptor.UserArea.Details.BenefitsUrl}>this link</Link> </p>
+                                        <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.HowToApply}</p>
+                                        <p><Link to={filtroPorId.MatchedObjectDescriptor.UserArea.Details.ApplyOnlineUrl}>Click here to apply</Link></p>
+                                        <p>What we offer:</p>
                                 </div>
                                 <div className='infoLocation'>
                                         <p>Location - {filtroPorId.MatchedObjectDescriptor.PositionLocationDisplay}</p>
