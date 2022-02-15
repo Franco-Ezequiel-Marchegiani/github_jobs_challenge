@@ -71,7 +71,12 @@ function WorkDetailContent(props) {
        Parrafo3: Es un array, iterarlo
        MajorDuties                      Obligaciones importantes
 
-       
+       Parrafo4:
+       BenefitsUrl                      Link con beneficios del puesto
+       AgencyContactEmail               mail de contacto
+       AgencyContactPhone               Numero
+       HowToApply                       Cómo aplicar
+       ApplyOnlineUrl                   Link para aplicar de manera Online
        */
         return (
               <section className="workDetailContainer">
