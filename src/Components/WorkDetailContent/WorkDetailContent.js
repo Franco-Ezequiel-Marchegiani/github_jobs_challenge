@@ -106,7 +106,7 @@ function WorkDetailContent(props) {
                                         <p>This position</p>
                                         <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.RequiredDocuments}</p>
                                         <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.Requirements}</p>
-                                        <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.RequiredDocuments}</p>
+                                        <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.Education}</p>
                                 </div>
                                 <div className='infoWhatWillBeDoing'>
                                         <p>What you'll be doing</p>
