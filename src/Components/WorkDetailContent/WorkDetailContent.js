@@ -62,6 +62,9 @@ function WorkDetailContent(props) {
        Parrafo 1:
           AgencyMarketingStatement         Información sobre la agencia
 
+       Parrafo2:
+       RequiredDocuments                Información importante
+     
        */
         return (
               <section className="workDetailContainer">
