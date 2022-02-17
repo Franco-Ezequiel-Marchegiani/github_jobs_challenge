@@ -122,6 +122,7 @@ function WorkDetailContent(props) {
                                 </div>
                                 <div className='infoLocation'>
                                         <p>Location - {filtroPorId.MatchedObjectDescriptor.PositionLocationDisplay}</p>
+                                        <p>You can see the benefits <Link to={filtroPorId.MatchedObjectDescriptor.UserArea.Details.BenefitsUrl}>clicking here</Link></p>
                                         <p>We welcome your cover letter with a description of your previous complete experience and your resume. Applicants must be authorized to work in the US as we are unable to sponsor. Kasisto is an equal opportunity employer.</p>
                                 </div>
                         </section>
