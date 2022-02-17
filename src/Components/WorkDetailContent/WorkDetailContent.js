@@ -109,7 +109,7 @@ function WorkDetailContent(props) {
                                 </div>
                                 <div className='infoWhatWillBeDoing'>
                                         <p>What you'll be doing</p>
-                                        <p></p>
+                                        <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.MajorDuties} </p>
                                 </div>
                                 <div className='infoWhatWeOffer'>
                                         <p>What we offer:</p>
