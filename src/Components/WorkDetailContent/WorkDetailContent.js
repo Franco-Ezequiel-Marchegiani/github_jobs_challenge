@@ -55,27 +55,6 @@ function WorkDetailContent(props) {
             diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
        }
 
-       //Información extraer info Trabajo:
-       /* 
-       Parrafo 1:
-          AgencyMarketingStatement         Información sobre la agencia
-
-       Parrafo2:
-       RequiredDocuments                Información importante
-       Requirements                     Requisitos                 
-       Education                        Educación
-       Evaluations                      Evaluaciones
-       
-       Parrafo3: Es un array, iterarlo
-       MajorDuties                      Obligaciones importantes
-
-       Parrafo4:
-       BenefitsUrl                      Link con beneficios del puesto
-       AgencyContactEmail               mail de contacto
-       AgencyContactPhone               Numero
-       HowToApply                       Cómo aplicar
-       ApplyOnlineUrl                   Link para aplicar de manera Online
-       */
         return (
               <section className="workDetailContainer">
                       {/* Hay un error al colocar el spiner */}
