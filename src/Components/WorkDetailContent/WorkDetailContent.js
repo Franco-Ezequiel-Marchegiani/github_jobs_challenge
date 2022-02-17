@@ -54,7 +54,7 @@ function WorkDetailContent(props) {
             let miliSegundosTranscurridos = Math.abs(fechaPublicacion.getTime() - fechaActual.getTime());
             diasTranscurridos = Math.round(miliSegundosTranscurridos/miliSegundosDia);
        }
-        //Test2
+        //Test3
         return (
               <section className="workDetailContainer">
                       {/* Hay un error al colocar el spiner */}
