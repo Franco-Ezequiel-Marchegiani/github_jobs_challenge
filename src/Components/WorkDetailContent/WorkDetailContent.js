@@ -104,7 +104,7 @@ function WorkDetailContent(props) {
                                         <p>You can see the benefits <Link to={filtroPorId.MatchedObjectDescriptor.UserArea.Details.BenefitsUrl}>clicking here</Link></p>
                                         <p>{filtroPorId.MatchedObjectDescriptor.UserArea.Details.HowToApply}</p>
                                         <p>If you want to apply online, yo can do it right <Link to={filtroPorId.MatchedObjectDescriptor.UserArea.Details.ApplyOnlineUrl === undefined ? "" : filtroPorId.MatchedObjectDescriptor.UserArea.Details.ApplyOnlineUrl}>here</Link></p>
-                                        
+                                        <p>The mail of the Agency is: {filtroPorId.MatchedObjectDescriptor.UserArea.Details.AgencyContactEmail === undefined ? "(Not Allowed)" : filtroPorId.MatchedObjectDescriptor.UserArea.Details.AgencyContactEmail}</p>
                                         <p>The telephone of the Agency is: {filtroPorId.MatchedObjectDescriptor.UserArea.Details.AgencyContactPhone === undefined ? "(Not Allowed)" : filtroPorId.MatchedObjectDescriptor.UserArea.Details.AgencyContactPhone}</p>
                                 </div>
                         </section>
