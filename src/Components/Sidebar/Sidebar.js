@@ -1,7 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 import './Sidebar.css';
 
-function Sidebar() {
+function Sidebar({setUserSearch}) {
+
   return (
     <section className="sideBarContainer">
         <div className='checkBoxFullTimeContainer'>
@@ -11,7 +13,7 @@ function Sidebar() {
         <div className='searchLocationContainer'>
             <label htmlFor="">Location</label>
             <i className="fas fa-globe-americas"></i>
-            <input placeholder='City, state, zip code or country' className='searchLocation' type="text"/>
+            <input onChange={(event)=> setUserSearch(event.target.value)} placeholder='City, state, zip code or country' className='searchLocation' type="text"/>
             <div className='radioContainer'>
                <input type="radio" id="london" value="london" name="city"/>
                <label htmlFor="london">London</label>
