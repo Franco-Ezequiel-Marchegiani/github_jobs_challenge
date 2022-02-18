@@ -7,7 +7,6 @@ import './Home.css';
 
 function Home() {
   let [ejemplo, setEjmplo] = useState("hola")
-  let [ejemplo2, setEjmplo2] = useState("hola2")
   let [userSearch, setUserSearch] = useState("");
   const {work, render} = WorkList(ejemplo, ejemplo2, userSearch);
   return (
