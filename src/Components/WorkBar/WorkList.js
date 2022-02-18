@@ -4,7 +4,6 @@ import WorkBar from './WorkBar'
 import PaginationWork from './PaginationWork'
 import { Pagination, Spinner } from 'react-bootstrap';
 function WorkList(userSearch) {
-  console.log(userSearch);
   const [work, setWork] = useState();
   const [paginaActual, setPaginaActual] = useState(1);
   const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(5);
@@ -31,6 +30,7 @@ function WorkList(userSearch) {
   let postActual
   if(work !== undefined){
     postActual = work.slice(indexPrimerPost,indexUltimoPost);
+    console.log(work[0].MatchedObjectDescriptor.PositionTitle);
   }
 
 
@@ -41,6 +41,7 @@ function WorkList(userSearch) {
 /* 
 {work === undefined ? "loadingContentHome" : "workListContainer"}
  */
+
   return{
     work,
     render:(  
@@ -51,9 +52,12 @@ function WorkList(userSearch) {
               </Spinner> 
               :
               <div>
-                  {postActual.map((individualWork, key)=>{
+                  {postActual.filter((valueSearchUser)=>{
+                    
+                  }).map((individualWork, key)=>{
                       return <WorkBar key={individualWork.MatchedObjectId} a={individualWork.MatchedObjectDescriptor.ApplyURI[0]} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration} idPuestoTrabajo={individualWork.MatchedObjectId}/>  
-                  })}
+                    })
+                  }
                   <div> 
                       <PaginationWork paginaActual={paginaActual} postTotales={work} publicacionesPorPagina={publicacionesPorPagina} paginacion={paginacion}/>
                   </div>
