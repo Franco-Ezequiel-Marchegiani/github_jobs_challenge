@@ -8,7 +8,6 @@ import './Home.css';
 function Home() {
   let [ejemplo, setEjmplo] = useState("hola")
   let [ejemplo2, setEjmplo2] = useState("hola2")
-  let [ejemplo3, setEjmplo3] = useState("hola3")
   let [userSearch, setUserSearch] = useState("");
   const {work, render} = WorkList(ejemplo, ejemplo2, userSearch);
   return (
