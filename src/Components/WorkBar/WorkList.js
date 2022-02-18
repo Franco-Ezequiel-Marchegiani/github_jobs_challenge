@@ -53,7 +53,9 @@ function WorkList(userSearch) {
               :
               <div>
                   {postActual.filter((valueSearchUser)=>{
-                    
+                    if(userSearch === ""){
+                      return valueSearchUser
+                    }
                   }).map((individualWork, key)=>{
                       return <WorkBar key={individualWork.MatchedObjectId} a={individualWork.MatchedObjectDescriptor.ApplyURI[0]} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration} idPuestoTrabajo={individualWork.MatchedObjectId}/>  
                     })
