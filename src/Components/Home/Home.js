@@ -10,8 +10,7 @@ function Home() {
   let [ejemplo2, setEjmplo2] = useState("hola2")
   let [ejemplo3, setEjmplo3] = useState("hola3")
   let [userSearch, setUserSearch] = useState("");
-  console.log(userSearch);
-  const {work, render} = WorkList(ejemplo, ejemplo2, ejemplo3);
+  const {work, render} = WorkList(ejemplo, ejemplo2, userSearch);
   return (
     <main className="containreAll">
       <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>

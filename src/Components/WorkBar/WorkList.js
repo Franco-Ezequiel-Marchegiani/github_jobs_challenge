@@ -3,7 +3,8 @@ import './WorkBar.css';
 import WorkBar from './WorkBar'
 import PaginationWork from './PaginationWork'
 import { Pagination, Spinner } from 'react-bootstrap';
-function WorkList(ejemplo, ejemplo2, ejemplo3) {
+function WorkList(ejemplo, ejemplo2, userSearch) {
+  console.log(userSearch);
   const [work, setWork] = useState();
   const [paginaActual, setPaginaActual] = useState(1);
   const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(5);
