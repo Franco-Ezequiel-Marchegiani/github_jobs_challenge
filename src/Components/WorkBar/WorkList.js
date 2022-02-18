@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './WorkBar.css';
 import WorkBar from './WorkBar'
 import PaginationWork from './PaginationWork'
-import { Pagination, Spinner } from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
 function WorkList(userSearch) {
   const [work, setWork] = useState();
   const [paginaActual, setPaginaActual] = useState(1);
@@ -52,14 +52,14 @@ function WorkList(userSearch) {
               </Spinner> 
               :
               <div>
-                  {postActual.filter((valueSearchUser)=>{
+                  {postActual.filter(valueSearchUser =>{
                     if(userSearch === ""){
                       return valueSearchUser
                     }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toLowerCase())){
                       return valueSearchUser
                     }
                   }).map((individualWork, key)=>{
-                      return <WorkBar key={individualWork.MatchedObjectId} a={individualWork.MatchedObjectDescriptor.ApplyURI[0]} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration} idPuestoTrabajo={individualWork.MatchedObjectId}/>  
+                      return <WorkBar key={individualWork.MatchedObjectId} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration} idPuestoTrabajo={individualWork.MatchedObjectId}/>  
                     })
                   }
                   <div> 
