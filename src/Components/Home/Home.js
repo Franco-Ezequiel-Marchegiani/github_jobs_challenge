@@ -6,7 +6,6 @@ import WorkList from '../WorkBar/WorkList';
 import './Home.css';
 
 function Home() {
-  let [ejemplo, setEjmplo] = useState("hola")
   let [userSearch, setUserSearch] = useState("");
   const {work, render} = WorkList(ejemplo, ejemplo2, userSearch);
   return (
