@@ -7,7 +7,7 @@ import './Home.css';
 
 function Home() {
   let [userSearch, setUserSearch] = useState("");
-  const {work, render} = WorkList(ejemplo, userSearch);
+  const {work, render} = WorkList(userSearch);
   return (
     <main className="containreAll">
       <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
