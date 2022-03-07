@@ -11,7 +11,7 @@ function Home() {
   return (
     <main className="containreAll">
       <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
-      <Header/>
+      <Header setUserSearch={setUserSearch}/>
       <section className={work === undefined ? "loadingContentHome" : "containetMain"}>
           <Sidebar setUserSearch={setUserSearch}/>
           {render}
