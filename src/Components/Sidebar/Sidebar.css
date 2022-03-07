@@ -21,6 +21,11 @@
     position: relative;
     left: 4px;
 }
+.labelSidebar span{
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
 .searchLocationContainer{
     display: flex;
     flex-direction: column;

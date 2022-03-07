@@ -7,7 +7,7 @@ function Sidebar({setUserSearch}) {
     <section className="sideBarContainer">
         <div className='checkBoxFullTimeContainer'>
           <input className='checkBoxFullTime' type="checkbox"/>
-          <label htmlFor="">Full Time</label>
+          <label htmlFor="" className='labelSidebar'><span>Full Time</span></label>
         </div>
         <div className='searchLocationContainer'>
             <label htmlFor="">Location</label>
