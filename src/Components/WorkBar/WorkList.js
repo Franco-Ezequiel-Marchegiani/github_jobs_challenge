@@ -30,7 +30,6 @@ function WorkList(userSearch) {
   let postActual
   if(work !== undefined){
     postActual = work.slice(indexPrimerPost,indexUltimoPost);
-    console.log(work[0].MatchedObjectDescriptor.PositionTitle);
   }
 
 
@@ -41,7 +40,6 @@ function WorkList(userSearch) {
 /* 
 {work === undefined ? "loadingContentHome" : "workListContainer"}
  */
-  console.log(userSearch.length);
   return{
     work,
     render:(  

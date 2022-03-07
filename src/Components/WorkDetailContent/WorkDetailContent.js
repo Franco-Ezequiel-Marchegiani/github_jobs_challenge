@@ -24,12 +24,11 @@ function WorkDetailContent(props) {
         .then(data => setWork(data.SearchResult.SearchResultItems));
       },[])
       console.log(work);
-     console.log(id);
-
+      
      let filtroPorId
      if(work !== undefined){
         filtroPorId = work.find( individualWork => individualWork.MatchedObjectId === id)
-        console.log(filtroPorId.MatchedObjectDescriptor.PositionTitle);
+        console.log(work[5].MatchedObjectDescriptor.PositionSchedule[0].Name); 
      }
         /* 
         ApplicationCloseDate      --- finalizacionBusqueda
@@ -48,7 +47,6 @@ function WorkDetailContent(props) {
        let diasTranscurridos
        if(work !== undefined){
             let fechaPublicacion = new Date(filtroPorId.MatchedObjectDescriptor.PublicationStartDate);
-            console.log(fechaPublicacion);
             let fechaActual = new Date();
             let miliSegundosDia = 24 * 60 * 60 * 1000;
             let miliSegundosTranscurridos = Math.abs(fechaPublicacion.getTime() - fechaActual.getTime());
