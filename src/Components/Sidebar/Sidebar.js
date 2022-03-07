@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 
-function Sidebar({fullTime, setFullTime}) {
+function Sidebar({fullTime, setFullTime, setUserSearch}) {
 /* setUserSearch(!userSearch) */
    console.log(fullTime);
   return (
@@ -13,7 +13,7 @@ function Sidebar({fullTime, setFullTime}) {
         <div className='searchLocationContainer'>
             <label htmlFor="">Location</label>
             <i className="fas fa-globe-americas"></i>
-            <input onChange={(event)=> setFullTime(event.target.value)} placeholder='City, state, zip code or country' className='searchLocation' type="text"/>
+            <input onChange={(event)=> setUserSearch(event.target.value)} placeholder='City, state, zip code or country' className='searchLocation' type="text"/>
             <div className='radioContainer'>
                <input type="radio" id="london" value="london" name="city"/>
                <label htmlFor="london">London</label>

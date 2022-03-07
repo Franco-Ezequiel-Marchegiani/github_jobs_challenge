@@ -16,7 +16,7 @@ function Home() {
       <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
       <Header setUserSearch={setUserSearch}/>
       <section className={work === undefined ? "loadingContentHome" : "containetMain"}>
-          <Sidebar setFullTime={setFullTime} fullTime={fullTime}/>
+          <Sidebar setFullTime={setFullTime} fullTime={fullTime} setUserSearch={setUserSearch}/>
           {render}
       </section>
       <Footer/>
