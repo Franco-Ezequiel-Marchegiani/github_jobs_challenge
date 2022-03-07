@@ -2,8 +2,6 @@ import React from 'react';
 import './Sidebar.css';
 
 function Sidebar({fullTime, setFullTime, setUserSearch}) {
-/* setUserSearch(!userSearch) */
-   console.log(fullTime);
   return (
     <section className="sideBarContainer">
         <div className='checkBoxFullTimeContainer'>

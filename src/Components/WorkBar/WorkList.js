@@ -3,7 +3,13 @@ import './WorkBar.css';
 import WorkBar from './WorkBar'
 import PaginationWork from './PaginationWork'
 import { Spinner } from 'react-bootstrap';
-function WorkList(userSearch) {
+function WorkList(userSearch, fullTime) {
+  /* Lo único que queda por añadir ahora, es:
+  Utilizar el estado "fullTime" para generar una condición y filtrar
+  Es un tipo de dato booleano, si es false que NO filtre por full time, y si es true, que filtre por si un trabajo es o no full time
+  El siguiente renglón muestra cómo acceder a los objetos cuyo full time es verdadero (es un string) */
+  /* console.log(work[5].MatchedObjectDescriptor.PositionSchedule[0].Name);  */
+  console.log(fullTime);
   const [work, setWork] = useState();
   const [paginaActual, setPaginaActual] = useState(1);
   const [publicacionesPorPagina, setPublicacionesPorPagina ] = useState(5);

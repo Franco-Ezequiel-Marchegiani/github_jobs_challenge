@@ -8,9 +8,7 @@ import './Home.css';
 function Home() {
   let [userSearch, setUserSearch] = useState("");
   let [fullTime, setFullTime] = useState(false);
-  console.log(fullTime);
-  /* console.log(work[5].MatchedObjectDescriptor.PositionSchedule[0].Name);  */
-  const {work, render} = WorkList(userSearch);
+  const {work, render} = WorkList(userSearch, fullTime);
   return (
     <main className="containreAll">
       <h1 className='gitHubTitle'>Github <span>Jobs</span></h1>
