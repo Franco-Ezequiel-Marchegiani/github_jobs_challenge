@@ -1,12 +1,13 @@
 import React from 'react';
 import './Sidebar.css';
 
-function Sidebar({setUserSearch}) {
+function Sidebar({userSearch, setUserSearch}) {
+/* setUserSearch(!userSearch) */
 
   return (
     <section className="sideBarContainer">
         <div className='checkBoxFullTimeContainer'>
-          <input className='checkBoxFullTime' type="checkbox"/>
+          <input onClick={ () => console.log("a")} className='checkBoxFullTime' type="checkbox"/>
           <label htmlFor="" className='labelSidebar'><span>Full Time</span></label>
         </div>
         <div className='searchLocationContainer'>

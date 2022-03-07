@@ -30,6 +30,7 @@ function WorkList(userSearch) {
   let postActual
   if(work !== undefined){
     postActual = work.slice(indexPrimerPost,indexUltimoPost);
+    console.log(work[0].MatchedObjectDescriptor.PositionTitle);
   }
 
 
@@ -40,6 +41,7 @@ function WorkList(userSearch) {
 /* 
 {work === undefined ? "loadingContentHome" : "workListContainer"}
  */
+  console.log(userSearch);
   return{
     work,
     render:(  
@@ -64,7 +66,7 @@ function WorkList(userSearch) {
                 work.filter(valueSearchUser =>{
                   if(userSearch === ""){
                     return valueSearchUser
-                  }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toLowerCase())){
+                  }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toString().toLowerCase())){
                     return valueSearchUser
                   }
                 }).map((individualWork, key)=>{

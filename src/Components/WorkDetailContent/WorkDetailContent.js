@@ -28,7 +28,6 @@ function WorkDetailContent(props) {
      let filtroPorId
      if(work !== undefined){
         filtroPorId = work.find( individualWork => individualWork.MatchedObjectId === id)
-        console.log(work[5].MatchedObjectDescriptor.PositionSchedule[0].Name); 
      }
         /* 
         ApplicationCloseDate      --- finalizacionBusqueda
