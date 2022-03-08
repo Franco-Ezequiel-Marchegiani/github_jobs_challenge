@@ -29,7 +29,6 @@ function WorkList(userSearch, fullTime) {
     .then(response => response.json())
     .then(data => setWork(data.SearchResult.SearchResultItems));
   },[])
-
   //Get Publicaciones Actuales
   const indexUltimoPost = paginaActual * publicacionesPorPagina;
   const indexPrimerPost = indexUltimoPost - publicacionesPorPagina;
