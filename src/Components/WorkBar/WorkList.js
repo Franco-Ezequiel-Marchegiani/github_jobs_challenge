@@ -59,22 +59,47 @@ function WorkList(userSearch, fullTime) {
               :
               <div>
                 {userSearch === "" ?
-                postActual.filter(valueSearchUser =>{
-                  if(userSearch === ""){
-                    return valueSearchUser
-                  }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toLowerCase())){
-                    return valueSearchUser
-                  }
-                }).map((individualWork, key)=>{
-                    return <WorkBar key={individualWork.MatchedObjectId} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration} idPuestoTrabajo={individualWork.MatchedObjectId}/>  
-                  })
+                  postActual.filter(valueSearchUser =>{
+                    if(fullTime){
+                      if(valueSearchUser.MatchedObjectDescriptor.PositionSchedule[0].Name === "Full-time"){
+                        if(userSearch === ""){
+                          return valueSearchUser
+                        }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toLowerCase())){
+                          return valueSearchUser
+                        }
+                      }
+                    }else{
+                      if(userSearch === ""){
+                        return valueSearchUser
+                      }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toLowerCase())){
+                        return valueSearchUser
+                      }
+                    }
+                    
+                  }).map((individualWork, key)=>{
+                      return <WorkBar key={individualWork.MatchedObjectId} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration} idPuestoTrabajo={individualWork.MatchedObjectId}/>  
+                    })
                 :
+
+
+
                 work.filter(valueSearchUser =>{
-                  if(userSearch === ""){
-                    return valueSearchUser
-                  }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toString().toLowerCase())){
-                    return valueSearchUser
+                  if(fullTime){
+                    if(valueSearchUser.MatchedObjectDescriptor.PositionSchedule[0].Name === "Full-time"){
+                      if(userSearch === ""){
+                        return valueSearchUser
+                      }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toString().toLowerCase())){
+                        return valueSearchUser
+                      }
+                    }
+                  }else{
+                    if(userSearch === ""){
+                      return valueSearchUser
+                    }else if(valueSearchUser.MatchedObjectDescriptor.PositionTitle.toLowerCase().includes(userSearch.toString().toLowerCase())){
+                      return valueSearchUser
+                    }
                   }
+                  
                 }).map((individualWork, key)=>{
                     return <WorkBar key={individualWork.MatchedObjectId} finalizacionBusqueda={individualWork.MatchedObjectDescriptor.ApplicationCloseDate} nombreOrganizacion={individualWork.MatchedObjectDescriptor.OrganizationName} ubicacionPuesto={individualWork.MatchedObjectDescriptor.PositionLocationDisplay} tituloPuesto={individualWork.MatchedObjectDescriptor.PositionTitle} inicioFechaPublicacion={individualWork.MatchedObjectDescriptor.PublicationStartDate} duracionJornada={individualWork.MatchedObjectDescriptor.PositionSchedule[0].Name} remuneracionMax-min={individualWork.MatchedObjectDescriptor.PositionRemuneration} idPuestoTrabajo={individualWork.MatchedObjectId}/>  
                   })
