@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github-jobs-proyect.web.app/">
+    <a target="_blank" href="https://github-jobs-proyect.web.app/">
       Solution
     </a>
     <span> | </span>
