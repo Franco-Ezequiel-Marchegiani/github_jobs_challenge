@@ -40,7 +40,7 @@
 ![screenshot](portadaGithubJobs.png)
 
 
-- Where can I see your demo? You can see the demo clicking this <a href="https://www.figma.com/file/gAkVx9CdOqnJcCjJ7nVNkw/job-search?node-id=0%3A1">link</a>
+- Where can I see your demo? You can see the demo clicking this <a target="_blank" href="https://www.figma.com/file/gAkVx9CdOqnJcCjJ7nVNkw/job-search?node-id=0%3A1">link</a>
 
 - What was your experience? My Experience doing this challenge, it was so comfortable, I learned a little more about the skills than I used to know, and i really had a good time making this web site :)
 
