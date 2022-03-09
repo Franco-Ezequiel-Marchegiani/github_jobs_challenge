@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.figma.com/file/gAkVx9CdOqnJcCjJ7nVNkw/job-search?node-id=0%3A1">
+    <a target="_blank" href="https://www.figma.com/file/gAkVx9CdOqnJcCjJ7nVNkw/job-search?node-id=0%3A1">
       Demo
     </a>
     <span> | </span>
