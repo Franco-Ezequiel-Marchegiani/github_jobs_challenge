@@ -37,8 +37,8 @@
 
 ## Overview
 
-![screenshot](portadaGithubJobs.png)
 ![screenshot](githubjobsMuestra.gif)
+![screenshot](portadaGithubJobs.png)
 
 
 - Where can I see your demo? You can see the demo clicking this <a target="_blank" href="https://www.figma.com/file/gAkVx9CdOqnJcCjJ7nVNkw/job-search?node-id=0%3A1">link</a>
