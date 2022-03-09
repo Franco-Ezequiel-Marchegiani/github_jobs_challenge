@@ -37,7 +37,6 @@
 
 ## Overview
 
-![screenshot](githubjobsMuestra.gif)
 ![screenshot](portadaGithubJobs.png)
 
 
