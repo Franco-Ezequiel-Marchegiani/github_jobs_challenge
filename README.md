@@ -57,7 +57,7 @@
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application, which one the user could search a job and see the detail of every offert. And also the user could filter by name of the job, or also filter if the work it's full time or not
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application, which one the user could search a job and see the detail of every offert. And also the user could filter by name of the job, or also filter if the work it's full time or not.
 
 ## How To Use
 
@@ -80,9 +80,9 @@ $ npm start
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+
+
 
 ## Contact
 
