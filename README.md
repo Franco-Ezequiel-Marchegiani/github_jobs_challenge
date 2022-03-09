@@ -39,9 +39,8 @@
 
 ![screenshot](portadaGithubJobs.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
+- Where can I see your demo?  You can see the demo clicking this <a href="https://www.figma.com/file/gAkVx9CdOqnJcCjJ7nVNkw/job-search?node-id=0%3A1">link</a>
 - What was your experience?
 - What have you learned/improved?
 - Your wisdom? :)
